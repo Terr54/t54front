@@ -1,0 +1,40 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+thead {
+  width: 100%;
+}
+.table {
+  width: 100%;
+  border: 1px solid #f0f0f0;
+}
+th {
+  border-right: 1px solid #f0f0f0;
+  font-size: 14px;
+  padding: 5px 0px;
+}
+th:last-child {
+  border-right: none;
+}
+tr {
+  width: 100%;
+}
+.tHead th {
+  padding: 10px 0px 4px;
+  color: #666666;
+  font-size: 14px;
+  font-weight: normal;
+}
+.tableBody {
+  width: 100%;
+}
+.tableBody td {
+  padding: 16px 0px;
+  font-size: 14px;
+  border-right: 1px solid #f0f0f0;
+  text-align: center;
+}
+.tableBody td:last-child {
+    border-right: none;
+}

@@ -1,0 +1,12 @@
+.container {
+  display: flex;
+  align-items: center;
+  color: #e63f07;
+  cursor: pointer;
+}
+.container:hover {
+  opacity: 0.8;
+}
+.spanText {
+  margin-left: 6px;
+}

@@ -1,0 +1,201 @@
+:root {
+    /* theme colors */
+  
+    --color-primary: #950a2b;
+    --color-primary-shade: #860926;
+    --color-primary-shade-1: #770822;
+    --color-primary-shade-2: #68071e;
+    --color-primary-shade-3: #590619;
+    --color-primary-tint: #9f2240;
+    --color-primary-tint-1: #aa3a55;
+    --color-primary-tint-2: #b4536a;
+    --color-primary-tint-3: #bf6c7f;
+  
+    --color-secondary: #0a9574;
+    --color-secondary-shade: #098668;
+    --color-secondary-shade-1: #08775c;
+    --color-secondary-shade-2: #076851;
+    --color-secondary-shade-3: #065945;
+    --color-secondary-tint: #0a9574;
+    --color-secondary-tint-1: #229f81;
+    --color-secondary-tint-2: #3aaa8f;
+    --color-secondary-tint-3: #53b49d;
+    
+  
+    --color-tertiary: #740a95;
+    --color-tertiary-shade: #680986;
+    --color-tertiary-shade-1: #5c0877;
+    --color-tertiary-shade-2: #510768;
+    --color-tertiary-shade-3: #450659;
+    --color-tertiary-tint: #ab6cbf;
+    --color-tertiary-tint-1: #8f3aaa;
+    --color-tertiary-tint-2: #9d53b4;
+    --color-tertiary-tint-3: #ab6cbf;
+  
+    --color-success: #2dd36f;
+    --color-success-shade: #28ba62;
+    --color-success-tint: #42d77d;
+  
+    --color-warning: #ffc409;
+    --color-warning-shade: #e0ac08;
+    --color-warning-tint: #ffca22;
+  
+    --color-danger: #eb445a;
+    --color-danger-shade: #cf3c4f;
+    --color-danger-tint: #ed576b;
+  
+    --color-dark: #222428;
+    --color-dark-shade: #1e2023;
+    --color-dark-tint: #383a3e;
+  
+    --color-medium: #92949c;
+    --color-medium-shade: #808289;
+    --color-medium-tint: #9d9fa6;
+  
+    --color-light: #f4f5f8;
+    --color-light-shade: #d7d8da;
+    --color-light-tint: #f5f6f9;
+
+    --color-green: #236927;
+    --color-green-shade-1: #1f5a22;
+    --color-green-shade-2: #18471b;
+
+    --color-blue: #4267B2;
+    --color-blue-shade-1: #33518d;
+    --color-blue-shade-2: #1d3057;
+    
+    /* fonts */
+    --font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  
+    /* shadows */
+    --box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0,0,0,0.24);
+    --box-shadow-1: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    --box-shadow-2: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    --box-shadow-3: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    --box-shadow-4: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    --box-shadow-5: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+  
+    /* backgrounds */
+    --bg-overlay: rgba(0, 0, 0, .7);
+    --bg-overlay-tint: rgba(200, 200, 200, .85);
+    --bg-editable-text-field: #ebecf0;
+    --bg-mobile-nav: #c8c8c8;
+    --bg-avatar: #f7eef2;
+    --bg-avatar-hover: #d0d4f3;
+    --bg-dropdown-li: #d1cfcf;
+    --bg-main: #f5f3f3;
+    --bg-secondary: #eeacca;
+  
+    /* border radius */
+    --brad-btn: 2px;
+    --brad-card: 5px;
+    --brad-round: 25px;
+    /* text */
+    --text-primary: rgba(201, 180, 180, 0.87);
+    --text-secondary: rgba(0, 0, 0, 0.54);
+    --text-hint: rgba(0, 0, 0, 0.38);
+    --text-white: #fff;
+    --text-light: rgba(255, 255, 255, 0.7);
+    --text-hint-light: rgba(255, 255, 255, 0.5);
+    /* btn */
+    --btn-disabled: rgb(206, 203, 203);
+    /**/
+    --btn-primary-padding: 10px;
+    --btn-primary-font-size: 16px;
+    --btn-primary-font-weight: 600;
+  
+    --input-text-bg-color-pristine: #f9fafb;
+    --input-text-bg-color-focus: #fff;
+    --input-text-border-color-focus: var(--color-tertiary-shade);
+    --input-text-border-color-pristine: #fafbfc;
+    /* breakpoints */
+    --breakpoint-mobile: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --breakpoint-xxl: 1400px;
+
+    --pay-provider-list-item-border: #d1d7dc;
+}
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
+  div.ReactTags__tags {
+    position: relative;
+  }
+  
+  /* Styles for the input */
+  div.ReactTags__tagInput {
+    width: 200px;
+    border-radius: 2px;
+    display: inline-block;
+  }
+  div.ReactTags__tagInput input.ReactTags__tagInputField,
+  div.ReactTags__tagInput input.ReactTags__tagInputField:focus {
+    height: 31px;
+    margin: 0;
+    font-size: 12px;
+    width: 100%;
+    border: 1px solid #eee;
+    padding: 0 4px;
+    outline: none;
+  }
+  
+  /* Styles for selected tags */
+  div.ReactTags__selected span.ReactTags__tag {
+    border: 1px solid #ddd;
+    background: #eee;
+    font-size: 12px;
+    display: inline-block;
+    padding: 5px;
+    margin: 0 5px;
+    cursor: move;
+    border-radius: 2px;
+  }
+  div.ReactTags__selected a.ReactTags__remove {
+    color: #aaa;
+    margin-left: 5px;
+    cursor: pointer;
+  }
+  button.ReactTags__remove {
+    background: none;
+    border: none;
+  }
+  
+  /* Styles for suggestions */
+  div.ReactTags__suggestions {
+    position: absolute;
+  }
+  div.ReactTags__suggestions ul {
+    list-style-type: none;
+    box-shadow: .05em .01em .5em rgba(0,0,0,.2);
+    background: white;
+    width: 200px;
+  }
+  div.ReactTags__suggestions li {
+    border-bottom: 1px solid #ddd;
+    padding: 5px 10px;
+    margin: 0;
+  }
+  div.ReactTags__suggestions li mark {
+    text-decoration: underline;
+    background: none;
+    font-weight: 600;
+  }
+  div.ReactTags__suggestions ul li.ReactTags__activeSuggestion {
+    background: #b7cfe0;
+    cursor: pointer;
+  }
+  

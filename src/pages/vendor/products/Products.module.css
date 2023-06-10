@@ -1,0 +1,15 @@
+.constainer {
+}
+.adminTabs {
+    display: flex;
+    margin-bottom: 25px;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+  }
+  .products {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 16px;
+    justify-content: center;
+  }

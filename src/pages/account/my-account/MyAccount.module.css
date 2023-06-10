@@ -1,0 +1,45 @@
+.imageDiv {
+  width: 100%;
+  height: 150px;
+}
+.avatar {
+  overflow: hidden;
+}
+.infoTabs {
+  display: flex;
+  align-items: center;
+}
+.info {
+  color: #666666;
+  margin-right: 14px;
+  cursor: pointer;
+}
+.info:hover {
+ opacity: 0.9;
+}
+.infoActive {
+  color: #531703;
+  border-bottom: 2px solid #e63f07;
+  line-height: 34px;
+}
+.inputs {
+  display: flex;
+  margin-top: 40px;
+}
+.leftInputs {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-right: 25px;
+}
+.rightInputs {
+  padding-right: 0px;
+}
+.signature {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.upload {
+  display: none
+}

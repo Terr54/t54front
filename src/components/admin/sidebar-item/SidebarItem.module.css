@@ -1,0 +1,21 @@
+.container {
+    display: flex;
+    align-items: center;
+    padding: 14px 20px;
+    cursor: pointer;
+    color: #210F04;
+}
+.activeContainer {
+    background-color: #FDF0EC;
+    color: #E63F07;
+}
+.container:hover {
+    opacity: 0.8;
+}
+
+@media (max-width: 900px) {
+    .text {
+        display: none;
+    }
+}
+

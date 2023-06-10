@@ -1,0 +1,34 @@
+.container {
+}
+.tab {
+  border: 1px solid #d1d1d1;
+  margin-right: 12px;
+  border-radius: 6px;
+  padding: 5px 12px;
+  color: #666666;
+  cursor: pointer;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+}
+.tab:hover {
+ opacity: 0.8;
+}
+.activeTab {
+    background: #FDF0EC;
+    border: 2px solid #E63F07;
+    color: #531703;
+}
+.type {
+  color: #666666;
+  cursor: pointer;
+  display: flex;
+  align-items:center
+}
+.type:hover {
+  opacity: 0.8;
+ }
+.activeType {
+  color: #E63F07;
+}
+

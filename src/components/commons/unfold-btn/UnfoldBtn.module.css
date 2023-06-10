@@ -1,0 +1,10 @@
+.container {
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  padding: 3px;
+  cursor: pointer;
+}
+.container:hover {
+    opacity: 0.85;
+}

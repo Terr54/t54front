@@ -1,0 +1,11 @@
+.content {
+    border-radius: 12px;
+    padding: 12px;
+    margin: 16px 0px;
+    min-height: 100vh;
+    @media screen (max-width: 768px){
+      margin: 0px;
+      padding: 0px;
+    }
+   
+  }

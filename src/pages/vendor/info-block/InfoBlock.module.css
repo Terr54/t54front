@@ -1,0 +1,14 @@
+.container {
+  padding: 18px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+.heading {
+  font-size: 13px;
+  color: #666666;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

@@ -1,0 +1,12 @@
+.container {
+    width: 13vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    border-right: 1px solid rgba(209, 209, 209, 1);
+    background: #fff;
+    z-index: 1000;
+    padding-top: 25px;
+    overflow-y: scroll;
+  }

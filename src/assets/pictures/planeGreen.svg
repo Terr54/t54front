@@ -1,0 +1,27 @@
+<svg width='186' height='83' viewBox='0 0 186 83' fill='none' xmlns='http://www.w3.org/2000/svg'>
+    <mask id='mask0_18_148' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='1' y='3' width='142' height='80'>
+        <path fill-rule='evenodd' clip-rule='evenodd' d='M142.026 82.6501L88.0485 52.8562L1.1189 4.87804L1.19765 3.37939L137.442 17.263L142 82.3373L142.026 82.6501Z' fill='white' />
+    </mask>
+    <g mask='url(#mask0_18_148)'>
+        <path fill-rule='evenodd' clip-rule='evenodd' d='M142.026 82.6501L88.0485 52.8562L1.1189 4.87804L1.19765 3.37939L137.442 17.263L142 82.3373L142.026 82.6501Z' fill='#9EC645' />
+    </g>
+    <mask id='mask1_18_148' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='89' y='42' width='54' height='41'>
+        <path fill-rule='evenodd' clip-rule='evenodd' d='M142.878 82.752L89.2556 52.8941L109.97 42.0752L142.852 82.4374L142.878 82.752Z' fill='white' />
+    </mask>
+    <g mask='url(#mask1_18_148)'>
+        <path fill-rule='evenodd' clip-rule='evenodd' d='M142.878 82.752L89.2556 52.8941L109.97 42.0752L142.852 82.4374L142.878 82.752Z' fill='#86B817' />
+    </g>
+    <mask id='mask2_18_148' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='0' y='3' width='109' height='67'>
+        <path fill-rule='evenodd' clip-rule='evenodd' d='M0.0212402 3.56261L59.5665 69.0802L108.089 42.039L1.42598 3.53149L0.0212402 3.56261Z' fill='white' />
+    </mask>
+    <g mask='url(#mask2_18_148)'>
+        <path fill-rule='evenodd' clip-rule='evenodd' d='M0.0212402 3.56261L59.5665 69.0802L108.089 42.039L1.42598 3.53149L0.0212402 3.56261Z' fill='#86B817' />
+    </g>
+    <mask id='mask3_18_148' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='0' y='0' width='186' height='27'>
+        <path fill-rule='evenodd' clip-rule='evenodd' d='M0 3.73883L138.014 26.3939L185.119 0L0 3.73883Z' fill='white' />
+    </mask>
+    <g mask='url(#mask3_18_148)'>
+        <path fill-rule='evenodd' clip-rule='evenodd' d='M0 3.73883L138.014 26.3939L185.119 0L0 3.73883Z' fill='#86B817' />
+    </g>
+</svg>
+    

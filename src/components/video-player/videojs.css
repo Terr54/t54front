@@ -1,0 +1,18 @@
+.vjs-poster {
+    background-size: cover;
+}
+.video-js-container-x {
+    width: 50vw;
+    height: 58vh;
+    margin-right: 20px;
+}
+.hide-play-btn .vjs-big-play-button {
+    display: none;
+}
+@media screen and (max-width: 768px) {
+    .video-js-container-x {
+        margin-right: 0px;
+        width: 80vw;
+        height: 100px;
+    }
+}

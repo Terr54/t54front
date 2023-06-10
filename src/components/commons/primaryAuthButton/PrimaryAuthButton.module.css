@@ -1,0 +1,83 @@
+.loginButton, .primary,
+.secondary {
+    width: 321px;
+    height: 50px;
+    border-radius: 4px;
+    border: none;
+    background: #2148C0;
+    display: flex;
+    font-size:18px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 17px;
+    margin-top: 10px;
+   }
+.primary,
+.secondary,
+/* .tertiary {
+  width: 665px;
+  height: 66px;
+  border-radius: 60px;
+  border: none;
+  background: #2148c0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 17px;
+  margin-top: 50px;
+
+} */
+
+.primary:hover,
+.secondary:hover,
+.tertiary:hover {
+  cursor: pointer;
+}
+.secondary {
+  width: fit-content;
+  padding: 3%;
+  height: 2.1rem;
+}
+.tertiary {
+  width: fit-content;
+  padding: 3%;
+  height: 2.9rem;
+}
+
+.btnTxt {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 34px;
+  color: #ffffff;
+}
+
+.secondary .btnTxt {
+  font-weight: 300;
+  font-size: 1rem;
+}
+.tertiary .btnTxt {
+  font-weight: 300;
+  font-size: 1rem;
+}
+/* Mobile */
+@media (max-width: 767px) {
+  .registerHere {
+    top: 12px;
+  }
+
+  .primary {
+    width: 90%;
+    height: 55px;
+  }
+  .secondary {
+    width: 40%;
+    height: 33px;
+  }
+
+  .btnTxt {
+    font-size: 18px;
+  }
+}

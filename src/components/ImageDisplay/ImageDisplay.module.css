@@ -1,0 +1,10 @@
+.image_display__box {
+    height: 9vh;
+    width: 100%;
+}
+
+.image_display__box img {
+    max-width:100%;
+    border-radius: 5px 0 0 5px;
+    max-height:100%;
+}

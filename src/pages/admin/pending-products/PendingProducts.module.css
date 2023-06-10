@@ -1,0 +1,89 @@
+.tableContainer {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 12px;
+  margin: 16px 0px;
+  height: 100%;
+  overflow: auto;
+}
+.adminTabs {
+  display: flex;
+  margin-bottom: 25px;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+.table {
+  width: 100%;
+  margin: 15px 0px;
+}
+tr {
+}
+.tHead th {
+  padding: 5px 15px;
+  color: #666666;
+  font-size: 14px;
+  font-weight: normal;
+}
+.tableBody td {
+  padding: 16px 5px;
+  font-size: 14px;
+  border-bottom: 1px solid #f0f0f0;
+  text-align: center;
+}
+.verified {
+  padding: 6px 8px;
+  border: 1px solid #00893a;
+  border-radius: 5px;
+  background-color: #ebf6f0;
+  color: #00893a;
+  font-size: 10px;
+}
+.unverified {
+  border: 1px solid #f52f2f;
+  color: #f52f2f;
+  background-color: #feefef;
+}
+.types {
+  border: 1px solid #d1d1d1;
+  border-radius: 6px;
+  padding: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 13px;
+  margin-left: 10px;
+}
+.action {
+}
+.actionContent {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.actionIcon {
+  cursor: pointer;
+  font-size: 14px;
+  color: #d1d1d1;
+  margin-right: 20px;
+}
+.actionIconVertical {
+  margin-left: 20px;
+}
+.recentText:hover {
+  opacity: 0.9;
+}
+.gridView {
+  width: 100%;
+  margin: 15px 0px;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+}
+.productDetails {
+  position: absolute;
+  width: 90%;
+  background-color: red;
+  box-sizing: border-box;
+  padding: 10px
+}

@@ -1,0 +1,32 @@
+.container {
+  position: absolute;
+  right: 0;
+  font-size: 13px;
+}
+.heading {
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 11px;
+  text-align: right;
+}
+.content {
+  background-color: #fff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  z-index: 1000;
+  width: 100px;
+  right: 0;
+  box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.08);
+}
+.item {
+  padding: 6px;
+  background-color: #f6f6f6;
+  text-align: center;
+  cursor: pointer;
+}
+.item:hover {
+  background-color: #e8e8e8;
+  transition:  0.5S ease-in-out;
+}

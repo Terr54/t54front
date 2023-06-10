@@ -1,0 +1,86 @@
+.table {
+    width: 100%;
+    margin: 15px 0px;
+  }
+  tr {
+}
+.tHead th {
+  padding: 10px 0px 4px;
+  color: #666666;
+  font-size: 14px;
+  font-weight: normal;
+}
+.tableBody td {
+  padding: 16px 0px;
+  font-size: 14px;
+  border-bottom: 1px solid #f0f0f0;
+  text-align: center;
+}
+.action {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .actionContent {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  .actionIcon {
+    cursor: pointer;
+    font-size: 14px;
+    color: #d1d1d1;
+    margin-right: 20px;
+  }
+  .productImage {
+    display: flex;
+    align-items: center;
+    width: 60%;
+  }
+  .tableData {
+    display: flex;
+    justify-content: center
+  }
+  .image {
+    width: 45px;
+    height: 40px;
+    border-radius: 4px;
+  }
+  .country {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+  }
+  .flagImage {
+    width: 20px;
+  }
+  .tableData {
+    display: flex;
+    align-items: center;
+  }
+  .incoterm {
+    display: flex;
+    flex-direction: column;
+  }
+  .incoterm span {
+    color: #666666;
+    font-size: 13px;
+  }
+  .open {
+    border: 1px solid #1071ff;
+    background: #ecf4ff;
+    border-radius: 6px;
+    padding: 4px 2px;
+    color: #1071FF;
+    font-size: 11px;
+  }
+  .draft {
+    background: #fefbef;
+    border: 1px solid #f5c92f;
+    color: #F5C92F;
+  }
+  .accepted {
+    background: #ebf6f0;
+    border: 1px solid #00893a;
+    color: #00893A;
+  }

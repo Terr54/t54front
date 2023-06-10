@@ -1,0 +1,58 @@
+.container {
+}
+.productImage {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+}
+.image {
+  width: 45px;
+  height: 40px;
+  border-radius: 4px;
+}
+.country {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+}
+.flagImage {
+  width: 20px;
+}
+.tableData {
+  display: flex;
+  align-items: center;
+}
+.incoterm {
+  display: flex;
+  flex-direction: column;
+}
+.incoterm span {
+  color: #666666;
+  font-size: 13px;
+}
+.open {
+  border: 1px solid #1071ff;
+  background: #ecf4ff;
+  border-radius: 6px;
+  padding: 4px 2px;
+  color: #1071ff;
+  font-size: 11px;
+}
+.draft {
+  background: #fefbef;
+  border: 1px solid #f5c92f;
+  color: #f5c92f;
+}
+.accepted {
+  background: #ebf6f0;
+  border: 1px solid #00893a;
+  color: #00893a;
+}
+.tabs {
+  display: flex;
+  margin-bottom: 25px;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}

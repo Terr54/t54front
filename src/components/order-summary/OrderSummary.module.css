@@ -1,0 +1,18 @@
+.container {
+  border-radius: 4px;
+  padding: 10px;
+  background-color: rgb(231, 231, 231);
+}
+.summary {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+}
+.detail {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 0px
+}

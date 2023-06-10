@@ -1,0 +1,32 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.head {
+  display: flex;
+}
+.open {
+  border: 1px solid #1071ff;
+  background: #ecf4ff;
+  border-radius: 6px;
+  padding: 0px 14px;
+  color: #1071ff;
+  font-size: 11px;
+  display: flex;
+  align-items: center;
+  margin-left: 16px;
+}
+.inTransit {
+  background: #fefbef;
+  border: 1px solid #f5c92f;
+  color: #f5c92f;
+}
+.unpaid {
+  background: #fefbef;
+  border: 1px solid #f5c92f;
+  color: #f5c92f;
+}
+.actionButtons {
+  display: flex;
+}
