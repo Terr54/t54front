@@ -45,6 +45,9 @@ export const Content = styled.div<modalWrapperProps>`
   display: flex;
   flex-direction: column;
   align-items: center;
+  @media (max-width: 768px) {
+    width: 80vw;
+  };
 `;
 
 export const Header = styled.div<modalWrapperProps>`
