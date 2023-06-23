@@ -16,7 +16,7 @@ const VideoPresentation = ({
 }: videoPresentationProps) => {
   const { t } = useTranslation();
   return (
-    <SectionWrapper height="65vh" Mheight="40vh" mPadding='auto'>
+    <SectionWrapper height="65vh" Mheight="40vh" mPadding='auto' padding='44px'>
       <Container color={color} flexDirection={flexDirection}>
         <VideoContainer>
           <VideoJSPlayer
