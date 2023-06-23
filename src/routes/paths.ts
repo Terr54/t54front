@@ -47,5 +47,6 @@ export const path = {
   PRIVACY_POLICY: '/privacy-policy',
   ADMIN_INVENTORY: '/admin/inventory',
   CHECKOUTSUMMARY: '/checkout-summary',
-  TERRE_BLOGS: 'https://terre54africa.blogspot.com/2022/12/nigeria-ginger-still-gets-into-eu.html'
+  TERRE_BLOGS: 'https://terre54africa.blogspot.com/2022/12/nigeria-ginger-still-gets-into-eu.html',
+  NEWSLETTER: '/admin/newsletter',
 }

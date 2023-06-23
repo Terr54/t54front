@@ -1,5 +1,5 @@
 const translation = {
-  welcome: 'Welcome to {{appName}}',
+  welcome: 'Welcome',
   'welcomeUser': 'Welcome ',
   'sign-in': 'Sign in',
   'home-text': 'Home',
@@ -510,7 +510,14 @@ const translation = {
   'in-season-products': 'In-Season Products',
   'latest-to-oldest': 'Latest To Oldest',
   'faq-h1': 'About the Company',
-  'faq-t1': 'Terre54 the first online sales platform for wholesale and semi-wholesale African products. Are you looking to stock up on tropical products? Terre54 acts as an intermediary between professional buyers in Europe and sellers in Africa, ensuring quality, transparency and fairness throughout the process.'
+  'faq-t1': 'Terre54 the first online sales platform for wholesale and semi-wholesale African products. Are you looking to stock up on tropical products? Terre54 acts as an intermediary between professional buyers in Europe and sellers in Africa, ensuring quality, transparency and fairness throughout the process.',
+  'subscription-aded': 'Subscription added successfully',
+  'subscription-failed': 'We could not add you subscription, please try again.',
+  'weekly-info': 'weekly dose of articles and resources',
+  'newsletter': 'Newsletter',
+  'newsletter-subscriptions': 'Newsletter Subscriptions',
+  'topic': 'Topic',
+  'date': 'Date',
   // not-translated
 };
 export default translation;

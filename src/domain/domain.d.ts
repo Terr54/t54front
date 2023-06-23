@@ -171,6 +171,18 @@ export interface MediaSlot extends BaseEntityWithCreatorAudit {
     externalKey: string;
 }
 
+export interface NewsLetter extends BaseEntityWithCreatorAudit {
+    topic: string;
+    content: string;
+}
+
+export interface NewsLetterSubscription extends BaseEntity {
+    email: string;
+    topic: string;
+    createdAt: Date;
+    updatedAt: Date;
+}
+
 export interface Place extends BaseEntity {
     country: string;
     locality: string;

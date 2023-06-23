@@ -43,6 +43,10 @@ export const backendUrls = {
   },
   media: {
     ALL: '/media'
+  },
+  newsletter: {
+    subscribe: '/public/newsletter/subscribe',
+    subscriptions: '/newsletter/subscriptions'
   }
 }
 

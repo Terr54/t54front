@@ -1,13 +1,13 @@
 import React from 'react';
-import Sidebar from '../../../components/admin/sidebar/Sidebar.component';
 import Navbar from '../../../components/commons/navbar/Navbar.component';
 import { sidebarItems } from '../../../assets/data/sidebarItems';
+import Sidebar from '../../../components/vendor/sidebar/Sidebar.component';
 
 interface ChildrenProp {
   children: React.ReactNode;
 }
 
-const AdminLayout = ({ children }: ChildrenProp) => (
+const GenaralLayout = ({ children }: ChildrenProp) => (
   <div style={{ display: 'flex' }}>
     <Sidebar width='14vw' sidebarItems={sidebarItems} />
     <div
@@ -29,4 +29,4 @@ const AdminLayout = ({ children }: ChildrenProp) => (
   </div>
 );
 
-export default AdminLayout;
+export default GenaralLayout;

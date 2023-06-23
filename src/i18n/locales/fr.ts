@@ -1,5 +1,5 @@
 const translation = {
-  welcome: 'Welcome to {{appName}}',
+  welcome: 'Bienvenue',
   'welcomeUser': 'Bienvenue ',
   'sign-in': 'S\'identifier',
   'home-text': 'Accueil',
@@ -521,7 +521,14 @@ const translation = {
   'in-season-products': 'Produits de saison',
   'latest-to-oldest': 'Du plus récent au plus ancien',
   'faq-h1': 'À propos de la Société',
-  'faq-t1': 'Terre54 la première plateforme de vente en ligne de produits africains en gros et demi-gros. Vous cherchez à vous approvisionner en produits tropicaux ? Terre54 agit comme intermédiaire entre acheteurs professionnels en Europe et vendeurs de l’Afrique en s’assurant de la qualité, de la transparence et de l’équité tout au long du processus. '
+  'faq-t1': 'Terre54 la première plateforme de vente en ligne de produits africains en gros et demi-gros. Vous cherchez à vous approvisionner en produits tropicaux ? Terre54 agit comme intermédiaire entre acheteurs professionnels en Europe et vendeurs de l’Afrique en s’assurant de la qualité, de la transparence et de l’équité tout au long du processus. ',
+  'subscription-aded': 'Abonnement ajouté avec succès',
+  'subscription-failed': 'Nous n\'avons pas pu ajouter votre abonnement, veuillez réessayer.',
+  'weekly-info': 'dose hebdomadaire d\'articles et de ressources',
+  'newsletter': 'bulletin d\'information',
+  'newsletter-subscriptions': 'Inscriptions à la newsletter',
+  'sujet': 'Sujet',
+  'date': 'Date',
   // not-translate
 };
 export default translation;

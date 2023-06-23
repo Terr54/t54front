@@ -1,6 +1,6 @@
 import { lazy } from 'react'
 import AccountLayout from '../pages/layouts/account/Acocunt.layout';
-import AdminLayout from '../pages/layouts/admin/Admin.layout';
+import GenaralLayout from '../pages/layouts/admin/General.layout';
 import MainLayout from '../pages/layouts/main/Main.layout'
 import VendorLayout from '../pages/layouts/vendor/Vendor.layout';
 import type { RouteType } from '../types'
@@ -64,97 +64,102 @@ export const routes: RouteType[] = [
   {
     path: path.ADMINSUPPLIER,
     component: lazy(async () => await import('../pages/admin/suppliers/Suppliers.page')),
-    layout: AdminLayout
+    layout: GenaralLayout
   },
   {
     path: path.PENDINGPRODUCTS,
     component: lazy(async () => await import('../pages/admin/pending-products/PendingProducts.page')),
-    layout: AdminLayout
+    layout: GenaralLayout
   },
   {
     path: path.VENDOR,
     component: lazy(async () => await import('../pages/vendor/dashboard/Dashboard.page')),
-    layout: VendorLayout
+    layout: GenaralLayout
+  },
+  {
+    path: path.NEWSLETTER,
+    component: lazy(async () => await import('../pages/admin/newsletter/NewsLetter.component')),
+    layout: GenaralLayout
   },
   {
     path: path.VENDORPRODUCTS,
     component: lazy(async () => await import('../pages/vendor/products/Products.page')),
-    layout: VendorLayout
+    layout: GenaralLayout
   },
   {
     path: path.VENDORINVOICES,
     component: lazy(async () => await import('../pages/vendor/invoices/Invoices.page')),
-    layout: VendorLayout
+    layout: GenaralLayout
   },
   {
     path: path.VENDORORDERS,
     component: lazy(async () => await import('../pages/vendor/orders/Orders.page')),
-    layout: VendorLayout
+    layout: GenaralLayout
   },
   {
     path: path.VENDORWALLETS,
     component: lazy(async () => await import('../pages/vendor/wallets/Wallets.page')),
-    layout: VendorLayout
+    layout: GenaralLayout
   },
   {
     path: path.EDITPRODUCT,
     component: lazy(async () => await import('../pages/vendor/edit-product/EditProduct.page')),
-    layout: VendorLayout
+    layout: GenaralLayout
   },
   {
     path: path.MYACCOUNT,
     component: lazy(async () => await import('../pages/account/my-account/MyAccount.page')),
-    layout: AccountLayout
+    layout: GenaralLayout
   },
   {
     path: path.QUOTES,
     component: lazy(async () => await import('../pages/account/quotes/Quotes.page')),
-    layout: AccountLayout
+    layout: GenaralLayout
   },
   {
     path: path.QUOTEDETAIL,
     component: lazy(async () => await import('../pages/account/quote-detail/QuoteDetail.page')),
-    layout: AccountLayout
+    layout: GenaralLayout
   },
   {
     path: path.PURCHASES,
     component: lazy(async () => await import('../pages/account/purchases/Purchases.page')),
-    layout: AccountLayout
+    layout: GenaralLayout
   },
   {
     path: path.PURCHASEDETAIL,
     component: lazy(async () => await import('../pages/account/purchase-detail/PurchaseDetail.page')),
-    layout: AccountLayout
+    layout: GenaralLayout
   },
   {
     path: path.INVOICES,
     component: lazy(async () => await import('../pages/account/invoices/Invoices.page')),
-    layout: AccountLayout
+    layout: GenaralLayout
   },
   {
     path: path.INVOICEDETAIL,
     component: lazy(async () => await import('../pages/account/invoice-detail/InvoiceDetail.page')),
-    layout: AccountLayout
+    layout: GenaralLayout
   },
   {
     path: path.SHIPMENTS,
     component: lazy(async () => await import('../pages/account/shipments/Shipments.page')),
-    layout: AccountLayout
+    layout: GenaralLayout
   },
   {
     path: path.SHIPMENTDETAIL,
     component: lazy(async () => await import('../pages/account/shipment-detail/ShipmentDetail.page')),
-    layout: AccountLayout
+    layout: GenaralLayout
   },
   {
     path: path.BOOKMARKS,
     component: lazy(async () => await import('../pages/account/bookmarks/Bookmarks.page')),
-    layout: AccountLayout
+    layout: GenaralLayout
   },
   {
     path: path.BOOKMARKDETAIL,
     component: lazy(async () => await import('../pages/account/bookmark-detail/BookmarkDetail.page')),
-    layout: AccountLayout
+    layout: GenaralLayout
   },
   {
     path: path.HERBSANDSPICES,
