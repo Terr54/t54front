@@ -9,7 +9,7 @@ import {
   Container,
   Image,
   ParagraphText,
-  blogContentProps
+  blogContentProps,
 } from './BlogContent.styles';
 
 const BlogContent = ({
@@ -19,39 +19,32 @@ const BlogContent = ({
   author,
   date,
   coverImg,
-  contentText
+  contentText,
+  children,
 }: blogContentProps) => {
   return (
     <Container>
       <PathHeader path={path} />
-      <SectionWrapper
-        padding="0px 44px 0px 130px"
-        height={100}
-      >
+      <SectionWrapper padding='0px 44px 0px 130px' height={100} width='86%'>
         <HeaderCaption
-          textAlign="left"
+          textAlign='left'
           heading={heading}
           caption={caption}
-          color="#210F04"
-          headingLength="90%"
-          captionMargin="0px"
-          alignItems="flex-start"
-          captionColor="#666666"
-          captionLength="90%"
+          color='#210F04'
+          headingLength='90%'
+          captionMargin='30px 0 0px'
+          alignItems='flex-start'
+          captionColor='#666666'
+          captionLength='90%'
         />
         <BlogAuthor author={author} date={date} />
         <Image>
-          <img src={coverImg} alt="farming" />
+          <img src={coverImg} alt='farming' />
         </Image>
       </SectionWrapper>
-      <SectionWrapper
-        padding="0px 44px 0px 130px"
-        height={100}
-      >
+      <SectionWrapper padding='0px 44px 0px 130px' height={100}>
         <BlogTextContent>
-          <ParagraphText>
-            <p>{contentText}</p>
-          </ParagraphText>
+          <ParagraphText>{children}</ParagraphText>
           <div>
             <NewsletterSignup />
           </div>
