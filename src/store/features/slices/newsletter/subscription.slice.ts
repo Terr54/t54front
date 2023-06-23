@@ -8,7 +8,7 @@ const initialState: AsyncState<PageCopy<NewsLetterSubscription>> = {
 };
 
 export const getSubscriptionsByTopic = createAsyncThunk('newsletter_subscription/by_topic', async (topic: string) => {
-    const sub = await getSubscriptions(topic);
+    const sub = await getSubscriptions(topic, 0);
     return sub?.data?.content;
 })
 

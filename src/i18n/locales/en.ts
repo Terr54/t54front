@@ -518,6 +518,11 @@ const translation = {
   'newsletter-subscriptions': 'Newsletter Subscriptions',
   'topic': 'Topic',
   'date': 'Date',
+  'contact-forms': 'Contact Forms',
+  'message': 'Message',
+  'subject': 'Subject',
+  'form-submitted': 'Form Submitted',
+  'form-submit-failed': 'Failed to submit form',
   // not-translated
 };
 export default translation;

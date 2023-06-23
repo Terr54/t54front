@@ -527,8 +527,13 @@ const translation = {
   'weekly-info': 'dose hebdomadaire d\'articles et de ressources',
   'newsletter': 'bulletin d\'information',
   'newsletter-subscriptions': 'Inscriptions à la newsletter',
-  'sujet': 'Sujet',
+  'topic': 'Sujet',
+  'subject': 'Sujet',
   'date': 'Date',
+  'contact-forms': 'Formulaires de contact',
+  'message': 'Message',
+  'form-submitted': 'Formulaire soumis',
+  'form-submit-failed': 'Échec de l\'envoi du formulaire',
   // not-translate
 };
 export default translation;

@@ -3,7 +3,7 @@ const appConfig = {
     server_url: 'https://mshield.herokuapp.com'
   },
   t54: {
-    server_url:  'http://localhost:8080'// Window.location.origin,
+    server_url: 'https://terre54-app.herokuapp.com' // 'http://localhost:8080'// Window.location.origin,
   },
   file_uploads: {
     server_url: 'https://learnerlabs-media-admin-idalvb67pq-uc.a.run.app' // 'http://localhost:3200',

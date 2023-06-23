@@ -92,13 +92,6 @@ export const sidebarItems: SidebarItemType[] = [
     roles: [roleName.admin]
   },
   {
-    id: 10,
-    title: 'newsletter',
-    icon: NotificationImportant,
-    to: path.NEWSLETTER,
-    roles: [roleName.admin]
-  },
-  {
     id: 11,
     title: 'orders',
     icon: ReceiptOutlinedIcon,
@@ -106,26 +99,33 @@ export const sidebarItems: SidebarItemType[] = [
     roles: [roleName.admin, roleName.supplier]
   },
   {
-    id: 2,
+    id: 12,
     title: 'invoices',
     icon: ReceiptLongOutlinedIcon,
     to: path.VENDORINVOICES,
     roles: [roleName.admin, roleName.supplier]
   },
   {
-    id: 3,
+    id: 13,
     title: 'products',
     icon: Inventory2OutlinedIcon,
     to: path.VENDORPRODUCTS,
     roles: [roleName.admin, roleName.supplier]
   },
   {
-    id: 4,
+    id: 14,
     title: 'wallets',
     icon: AccountBalanceWalletOutlinedIcon,
     to: path.VENDORWALLETS,
     roles: [roleName.admin, roleName.supplier]
-  }
+  },
+  {
+    id: 15,
+    title: 'newsletter',
+    icon: NotificationImportant,
+    to: path.NEWSLETTER,
+    roles: [roleName.admin]
+  },
 ];
 
 export const vendorSidebarItems = [

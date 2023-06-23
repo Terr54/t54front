@@ -1,5 +1,5 @@
 import { backend } from "..";
-import { ApiResponse, NewsLetterSubscription, PageCopy } from "../../domain/domain";
+import { ApiResponse, ContactInbox, ContactInboxRequest, NewsLetterSubscription, PageCopy } from "../../domain/domain";
 import { backendUrls } from "../urls";
 
 export const subscribeToNewsLetter = (email: string, topic: string) => backend.get(backendUrls.newsletter.subscribe, {
@@ -9,9 +9,19 @@ export const subscribeToNewsLetter = (email: string, topic: string) => backend.g
     }
 });
 
-export const getSubscriptions = (topic: string) => backend.get<ApiResponse<PageCopy<NewsLetterSubscription>>>(backendUrls.newsletter.subscriptions, {
+export const getSubscriptions = (topic: string, page: number) => backend.get<ApiResponse<PageCopy<NewsLetterSubscription>>>(backendUrls.newsletter.subscriptions, {
     params: {
-        topic
+        topic,
+        size: 100,
+        page,
     }
 });
+export const getContactInbox = (page: number) => backend.get<ApiResponse<PageCopy<ContactInbox>>>(backendUrls.newsletter.inbox, {
+    params: {
+        page,
+        size: 100
+    }
+});
+
+export const submitContactForm = (data: Partial<ContactInboxRequest>) => backend.post<ApiResponse<ContactInbox>>(backendUrls.newsletter.contact, data);
 

@@ -46,7 +46,9 @@ export const backendUrls = {
   },
   newsletter: {
     subscribe: '/public/newsletter/subscribe',
-    subscriptions: '/newsletter/subscriptions'
+    subscriptions: '/newsletter/subscriptions',
+    contact: '/public/newsletter/contact',
+    inbox: '/newsletter/contact'
   }
 }
 
