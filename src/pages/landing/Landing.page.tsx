@@ -601,7 +601,7 @@ const Landing = () => {
       <SectionWrapper padding='0px' height={40}>
         <Contact />
       </SectionWrapper>
-      <SectionWrapper height={100}>
+      <SectionWrapper height={100} padding='44px'>
         <div
           style={{
             backgroundColor: '#FDF0EC',
@@ -624,7 +624,7 @@ const Landing = () => {
               />
             )}
             color='rgba(83, 23, 3, 1)'
-            headingLength='50%'
+            headingLength='50%'         
           />
         </div>
       </SectionWrapper>
