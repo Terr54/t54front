@@ -13,7 +13,7 @@ export const Container = styled.div``;
 export const ServicesContainer = styled.div`
   display: flex;
   gap: 1vw;
-  padding-top: 10px;
+  padding-top: 40px;
   margin-bottom: 12px;
    @media (max-width: 768px) {
     padding-top: 0px;

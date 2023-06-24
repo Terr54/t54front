@@ -8,7 +8,7 @@ const ProductItem = ({
   country,
   price,
   bgImage,
-  width = '65vw',
+  width = '18vw',
   height,
   coverHeight = '30vh',
   // coverWidth = '14vw',

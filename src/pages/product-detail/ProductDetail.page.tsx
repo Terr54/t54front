@@ -105,7 +105,7 @@ const ProductDetail = () => {
           />
         )}
         {productPayload ? <ProductPreview payload={productPayload} /> : null}
-        <SectionWrapper height={100}>
+        <SectionWrapper height={100} padding='44px'>
           <Steps>
             {productDetailSteps.map((step) => (
               <ProductDetailStep
