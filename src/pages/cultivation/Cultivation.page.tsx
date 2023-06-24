@@ -10,7 +10,7 @@ const Cultivation = () => {
   return (
     <Container>
       <BlogContent
-        path={location.pathname}
+        path={location?.pathname?.replaceAll('%', ' ')}
         heading="Learn how Agro-products are cultivated, and made ready for export"
         caption="A dive into the various cultivation processes of some common agro-products and how they are prepared for export."
         author="Samson Opeyemi"

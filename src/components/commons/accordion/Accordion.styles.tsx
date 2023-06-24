@@ -5,7 +5,7 @@ export interface accordionProps {
   open?: boolean;
   onClick?: () => void;
   onClose?: () => void;
-  text?: string;
+  text?: any;
   heading?: string;
   children?: ReactNode | ReactNode[];
   //   texts?: Array<{

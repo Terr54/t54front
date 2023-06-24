@@ -37,7 +37,7 @@ export const path = {
   ALLARTICLES: '/blog/all-articles',
   INTERNATIONALTRADE: '/blog/international-trade',
   STORAGE: '/blog/storage',
-  CULTIVATION: '/blog/cultivation',
+  CULTIVATION: '/blog/cultivation/:id',
   HERBSANDSPICES: '/herbs-and-spices',
   ALLPRODUCTS: '/all-products',
   SUPPLIERS: '/suppliers',

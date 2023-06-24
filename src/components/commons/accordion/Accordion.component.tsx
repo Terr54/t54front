@@ -10,38 +10,44 @@ const Accordion = ({
   onClick,
   open,
   children,
-  texts
+  texts,
 }: accordionProps) => {
-  const { t } = useTranslation()
+  const { t } = useTranslation();
   return (
     <>
       <Header onClick={onClick}>
         <h4 style={{ margin: '0' }}>{heading}</h4>
-        {
-          open
-            ? (
+        {open ? (
           <RemoveCircleOutline
             style={{ color: '#E63F07' }}
             onClick={onClick}
-            fontSize='small' />
-              )
-            : (
-            <AddCircleOutlineIcon
-              style={{ color: '#E63F07' }}
-              onClick={onClick}
-              fontSize='small'
-            />
-              )
-        }
-
+            fontSize='small'
+          />
+        ) : (
+          <AddCircleOutlineIcon
+            style={{ color: '#E63F07' }}
+            onClick={onClick}
+            fontSize='small'
+          />
+        )}
       </Header>
       {open && (
         <Content>
           <p>{text}</p>
-          {texts?.map((t: any) => (
-            <div key={t.id}>
-              <p style={{ fontWeight: 'bold' }}>{t.heading}</p>
-              <p>{t.text}</p>
+          {texts?.map((txt: any) => (
+            <div key={txt.id}>
+              <p style={{ fontWeight: 'bold' }}>{t(txt.heading)}</p>
+              {typeof(t(txt.text)) === 'string' ? (
+                <p>{t(txt.text)}</p>
+              ) : (
+                txt?.text.map((txtSub: string) => (
+                  <ul key={txtSub}>
+                    <li>
+                      <p>{t(txtSub)}</p>
+                    </li>
+                  </ul>
+                ))
+              )}
             </div>
           ))}
           {children}

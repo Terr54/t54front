@@ -12,24 +12,27 @@ import { StyledClose } from '../../components/modal-wrapper/ModalWrapper.styles'
 import OrderSummary from '../../components/order-summary/OrderSummary.component';
 import { paymentCards } from '../../assets/data/paymentCards';
 import { PagedProductListResponse } from '../../domain/domain';
-import { getAllAvailbleProducts, getAllProductCategories } from '../../api/common';
+import {
+  getAllAvailbleProducts,
+  getAllProductCategories,
+} from '../../api/common';
 import ProductItem from '../../components/product-item/ProductItem.component';
 import countries, { CountryCode } from '../../utils/contrycodes';
 import { useNavigate } from 'react-router-dom';
 
 const CheckoutSummary = () => {
   const effectRef = useRef(true);
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   const [productPage, setProductPage] = useState(0);
   const [producPagSize, setProductPageSize] = useState(20);
   const [productDict, setProductDict] = useState<PagedProductListResponse>();
 
   useEffect(() => {
     if (effectRef.current) {
-      getAllProductCategories().then(data => {
+      getAllProductCategories().then((data) => {
         console.log({ data });
       });
-      getAllAvailbleProducts(productPage, producPagSize).then(res => {
+      getAllAvailbleProducts(productPage, producPagSize).then((res) => {
         console.log({ res });
         setProductDict(res.data.content);
       });
@@ -115,9 +118,9 @@ const CheckoutSummary = () => {
           <div className={classes.paymentDetails}>
             <h3>ACCEPTED PAYMENT METHODS</h3>
             <div className={classes.paymentCards}>
-              {
-                paymentCards?.map((item: any) => <img key={item.id} src={item.src} className={classes.card} />)
-              }
+              {paymentCards?.map((item: any) => (
+                <img key={item.id} src={item.src} className={classes.card} />
+              ))}
             </div>
           </div>
         </div>
@@ -125,25 +128,31 @@ const CheckoutSummary = () => {
       <div className={classes.relatedProducts}>
         <h3>Related Products</h3>
         <div className={classes.products}>
-          {
-            productDict?.products.map((product) => (
-              <ProductItem
-                key={product.id}
-                bgImage={productDict.mediaSlots?.[product.id]?.[0].src}
-                title={product.name}
-                country={countries[product.originCountryId as CountryCode].name.en}
-                price={{
-                  currency: productDict.productStocks?.[product.id]?.[0]?.currency,
-                  amount: productDict.productStocks?.[product.id]?.[0]?.unitPrice,
-                  unit: productDict.productStocks?.[product.id]?.[0]?.unitMeasure
-                }}
-                style={{ marginRight: '5px' }}
-                onClick={() => navigate(`/product-detail/${product.id}`)}
-                countryFlag={countries[product.originCountryId as CountryCode].flag?.flag}
-                company={productDict.productSuppliers?.[product.sellerProfileId]?.merchantName}
-              />
-            ))
-          }
+          {productDict?.products.map((product) => (
+            <ProductItem
+              key={product.id}
+              bgImage={productDict.mediaSlots?.[product.id]?.[0].src}
+              title={product.name}
+              country={
+                countries[product.originCountryId as CountryCode].name.en
+              }
+              price={{
+                currency:
+                  productDict.productStocks?.[product.id]?.[0]?.currency,
+                amount: productDict.productStocks?.[product.id]?.[0]?.unitPrice,
+                unit: productDict.productStocks?.[product.id]?.[0]?.unitMeasure,
+              }}
+              style={{ marginRight: '5px' }}
+              onClick={() => navigate(`/product-detail/${product.id}`)}
+              countryFlag={
+                countries[product.originCountryId as CountryCode].flag?.flag
+              }
+              company={
+                productDict.productSuppliers?.[product.sellerProfileId]
+                  ?.merchantName
+              }
+            />
+          ))}
         </div>
       </div>
     </div>

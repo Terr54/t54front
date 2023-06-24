@@ -509,6 +509,149 @@ const translation = {
   'bestsellers': 'Bestsellers',
   'in-season-products': 'In-Season Products',
   'latest-to-oldest': 'Latest To Oldest',
+  'q1-h': 'About the Company',
+  'q1-t': 'Terre54 the first online sales platform for wholesale and semi-wholesale African products. Are you looking to stock up on tropical products? Terre54 acts as an intermediary between professional buyers in Europe and sellers in Africa, ensuring quality, transparency and fairness throughout the process.',
+  'q1-h1': 'Distributors, we bring you a different solution:',
+  'q1-h1-t1':
+    'Easy access to quality and ethically sourced African products.',
+  'q1-h1-t2': 'A rigorous selection of African producers and products.',
+  'q1-h2': 'Producers,',
+  'q1-h2-t1': 'Better compensation',
+  'q1-h2-t2': 'New market',
+  'q1-h2-t3': 'Support for quality and logistics.',
+  'q2-t':
+    'Our vision is to make the world a smaller place. The mission is to help provide international access for products from the African continent.',
+  'q2-h': 'What is the specific purpose of your platform?',
+  'q3-h': 'Sale of products? Provision of services? Or both??',
+  'q3-t':
+    'Both. We mainly provide services because the products on the platform come from producers and suppliers. On the other hand, we have customer products in stock that we have in the warehouse in France as well as terre basics.',
+  'q4-h': 'Terre Basics?',
+  'q4-t':
+    'It is a product that we package in France on the Terre Basics brand from Africa producer.',
+  'q5-h': 'What types of products or services are affected? ? ',
+  'q5-t':
+    "Agricultural products for cosmetic and food purposes. The services are the organization of transport, quality tests and support for producers to sell internationally as conditioning services for buyers.",
+  'q6-h': 'For which territories?',
+  'q6-t': 'Our services extend mainly from Africa to Europe.',
+  'q7-h': 'Where do you have offices?',
+  'q7-t':
+    'We have a presence in Lagos, Nigeria, A Rungis, and Clermont Ferrand in France. We are also creating relays in other countries.',
+  'q8-h': 'Companies exclusively or individuals or both?',
+  'q8-t':
+    'The platform serves businesses and professionals, if you can find an offer for you, go for it. However, we specialize in semi-wholesale bulk purchases.',
+  'q9-h': 'Do you have products?',
+  'q9-t': 'We offer products in stock to our suppliers.',
+  'q10-h': 'And the prices how does it work?',
+  'q10-t':
+    'We try to be as transparent as possible with our customers and suppliers. By doing so, we ensure that everyone receives their value for their efforts. Producer fixes the prices and we have a commission on the product price and service charge for organizing transportation.',
+  'q11-h': 'What categories of products? ',
+  'q11-t':
+    "This is always evolving kindly check out our online catalog for the latest products at terre54.co ",
+  'q11-h1-t1':
+    'Always feel free to contact us should you have any questions..',
+  'q11-h2-t1': 'Oils : Shea Butter, Coconut Oil, Palm Oil.',
+  'q11-h3-t1':
+    ' Cash crops : Ginger, Sesame, Soy, Peanuts, Coffee, Cashews...',
+  'q11-h4-t1': 'fruit ; Pineapple, Bananas, Avocado, Plantain, Mango, ...',
+  'q11-h5-t1': 'Medicinal plants : Hibiscus, Moringa, Stevia,',
+  'q11-h6-t1':
+    "Foods packaged in 1kg, 5kg, 10kg, …on order such as Ginger, Garri, egusi, powdered crayfish, powdered beans, cassava flour, and others.",
+  'q11-h6': 'Packaged food',
+  'q11-h7-t1':
+    'We are able to engage in contract farming with our partners for organic farming of vegetables as well as others like ginger, hibiscus, tiger nuts, spices like paprika, turmeric, black pepper.',
+  'q11-h7': 'Organic.',
+  'q11-h8-t1': 'Contact us for more information at contact@terre54.co',
+  'q12-h': 'Why buy from terre54.co?',
+  'q12-t':
+    'We work directly with sometimes small, sometimes medium-sized producers to act as a partner in terms of quality and market access. By doing so, producers and buyers find a privileged partner in a short circuit.',
+  'q13-h': 'How can I contact you?',
+  'q13-h1-t1': 'From Europe: +33760926545',
+  'q13-h2-t1': 'From Africa: +2348059201672',
+  'q13-h3-t1':
+    'Monday to Friday from 8 a.m. to 6 p.m. and Saturday from 9 a.m. to 12 p.m. Or email us at contact@terre54.co',
+  'q14-h': 'How do I know that the data is managed with Terre54? ',
+  'q14-t':
+    'Your privacy is of the utmost importance to us. We work hard to ensure that your details remain safe and secure. If you want to know more about how we ensure your privacy, please see our privacy statement. https://terre54.herokuapp.com/privacy-policy ',
+  'q15-h': 'Will my information be shared with third parties?',
+  'q15-t':
+    'All personal information provided by you will be treated with the utmost care and responsibility. Your information will not be sold or shared with any third party. terre54 rightly respects your privacy. Learn more about how we protect your data by referring to Terre54\'s privacy statement .',
+  'q16-h':
+    'I want to sell on the terre54 platform. How can I do this?',
+  'q16-t':
+    'Contact us by email at contact@terre54.co or visit our website terre54.co',
+  'q17-h': 'How can I update my account details? ',
+  'q17-t':
+    'When you are logged in, click on the "My Account" menu in the dropdown menu that appears next to your name on the upper right side of the page. You will be directed to your account details. Scroll down to find your account information. Click "edit" next to the section of information you wish to update. Don\'t forget to click \'save\' to ensure your new details are stored on our system.',
+  'q18-h': 'Comment puis-je me déconnecter de mon compte ?',
+  'q18-t':
+    ' You can log out by clicking on the "log out" link at the top right of the page menu located next to your name in the top right corner of the page.',
+  'q19-h':
+    'What should I do when I have difficulty ordering from your website?',
+  'q19-t':
+    'If you still encounter difficulties, you can contact Customer Service: contact@terre54.co or chat directly with us online. ',
+  'q20-h': 'Should I enable cookies in my browser? ',
+  'q20-t':
+    ' Cookies are the name of small amounts of data sent from a website to your browser. It is then stored on your computer\'s hard drive. Your browser preferences are generally cookie-enabled (meaning each website can send its own cookie to your browser). Cookies cannot access your personal information but instead use anonymous unique identifiers. Cookies will need to be enabled on your browser to allow you to add products to your cart and access your account information. If you use a public computer or share your computer with others, be sure to log out before leaving your computer unattended to protect your account information. To learn more about how we use cookies, please see our privacy statement.',
+  'q21-h': 'How can I order online? ',
+  'q21-t':
+    'Terre54.co makes it easier to find and order products. If you are looking for a particular product, just chat with us .',
+  'q22-h':
+    'Is there a way for me to view the product before purchasing it? ',
+  'q22-t':
+    ' Some of our products are available for inspection or we can send samples contact us for more information: contact@terre54 or visit our website terre54.co',
+  'q23-h': 'What happens if I made a mistake with my order?',
+  'q23-t': ' Please contact our Customer Service team immediately.',
+  'q24-h': 'Can I cancel my order?   ',
+  'q24-t': 'Yes, online with a representative, by email or by phone.',
+  'q25-h': 'Minimum order? ',
+  'q25-t':
+    'Yes, except for products available in stock, please contact us.',
+  'q26-h': 'Order a product out of stock?',
+  'q26-t':
+    'Please note that items are available while stocks last and on pre-order. If you have other requests, do not hesitate to look at our online catalogs or contact Customer Service.',
+  'q27-h': 'Can you back order items?',
+  'q27-t': ' Yes, customers can order products in back order.',
+  'q28-h':
+    'When can I expect new products to be listed on your website? ',
+  'q28-t':
+    'Our website is constantly updated with the arrival of new stocks. We update our product range as more products are produced but don\'t wait to order.',
+  'q29-h': 'What currency are your prices in? ',
+  'q29-t': 'All prices are in euros.',
+  'q30-h': 'Do your prices include VAT? ',
+  'q30-t':
+    'Yes, import VAT. Since the goods are being dispatched from a country outside the EU, for example Nigeria, we will then have to pay the import VAT for the goods to the customs department.',
+  'q31-h':
+    'If you find a better offer (price/quality/service) on sale elsewhere?',
+  'q31-t':
+    ' Yes, let us know and we\'ll be happy to make a better offer.',
+  'q32-h': 'How do I pay?',
+  'q32-t':
+    ' Cash on delivery (POD), electronic bank transfer and classic credit card. ',
+  'q33-h': 'Cash on delivery (POD)',
+  'q33-t':
+    ' Cash on delivery delivery is only available for certain regions. You can pay when the goods arrive by transfer or bank card.',
+  'q34-h':
+    'How secure is it to use my credit card to make a payment? ',
+  'q34-t':
+    ' At Terre54.com we ensure that credit card transactions take place in a secure environment based on Stripe payments, pci compliant, the most rigorous payment security system available today learn more here .',
+  'q35-h': 'Comment puis-je savoir si ma commande a été prise en compte?',
+  'q35-t':
+    'Les transactions réussies sont suivies d’un courriel de confirmation, qui inclut votre numéro de commande unique, envoyé à l’adresse que vous fournissez. Si, pour une raison quelconque, vous ne recevez pas de courriel de confirmation ou de communication de Terre54 dans les 24 heures, veuillez contacter le Service clientèle à contact@terre54.co pour confirmer votre commande.',
+  'q36-h': ' Combien dois-je payer pour la livraison ?',
+  'q36-t':
+    'Nos partenaires établissent les prix de livraison que nous communiquent au moment de l’achat des produits disponibles en stock ou après avoir demandé un prix.',
+  'q37-h': ' Combien de temps prenez-vous pour livrer ?',
+  'q37-t':
+    'Pour les envois aériens, 10 jours. Pour les commandes disponibles en stock 3 Jours en France et 5 jours en EU. Pour livraison par bateau, veuillez nous envoyer un courriel sur contact@terre54.co ',
+  'q38-h':
+    ' Puis-je modifier l’adresse de livraison de ma commande une fois que j’ai passé la commande ? ',
+  'q38-t':
+    'Contactez-nous pour voir ce qui est possible si vous voulez des changements.contact@Terre54.co     ',
+  'q39-h': ' Que dois-je faire si je reçois un article défectueux ? ',
+  'q39-t':
+    'Des contrôles de qualité stricts sont effectués pour s’assurer que nos produits sont de la plus haute qualité et exempts de défauts. Toutefois, si vous avez reçu des produits défectueux veuillez contacter le service client à contact@Terre54.co',
+  'q39-h1-t1':
+    'Si vous avez d’autres questions que nous n’avons pas n’hésitez pas à contacter notre équipe à contact@Terre54.co',
   'faq-h1': 'About the Company',
   'faq-t1': 'Terre54 the first online sales platform for wholesale and semi-wholesale African products. Are you looking to stock up on tropical products? Terre54 acts as an intermediary between professional buyers in Europe and sellers in Africa, ensuring quality, transparency and fairness throughout the process.',
   'subscription-aded': 'Subscription added successfully',

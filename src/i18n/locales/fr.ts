@@ -1,6 +1,6 @@
 const translation = {
-  welcome: 'Bienvenue',
   'welcomeUser': 'Bienvenue ',
+  'welcome': 'Bienvenue',
   'sign-in': 'S\'identifier',
   'home-text': 'Accueil',
   'about-us': 'À propos de nous',
@@ -486,42 +486,189 @@ const translation = {
   'ginger-in-nigeria': 'Gingembre au Nigeria',
   'full-name': 'Nom complet',
   'phone-number': 'Numéro de téléphone',
-  'signature': 'Signature',
-  'nationality': 'Nationalité',
-  'role-at-company': 'Rôle dans l\'entreprise',
+  signature: 'Signature',
+  nationality: 'Nationalité',
+  'role-at-company': "Rôle dans l'entreprise",
   'social-media': 'Médias sociaux',
-  'company-name': 'Nom de l\'entreprise',
-  'company-email': 'Courriel de l\'entreprise',
-  'company-phone-number': 'Numéro de téléphone de l\'entreprise',
-  'company-address': 'L\'Adresse de l\'entreprise',
+  'company-name': "Nom de l'entreprise",
+  'company-email': "Courriel de l'entreprise",
+  'company-phone-number': "Numéro de téléphone de l'entreprise",
+  'company-address': "L'Adresse de l'entreprise",
   'tax-id': 'Identifiant fiscal',
-  'certificate-of-incorporation': 'Certificat d\'incorporation de la société',
-  'warehouse-address': 'Adresse de l\'entrepôt de la société',
-  'industry': 'Industrie',
+  'certificate-of-incorporation': "Certificat d'incorporation de la société",
+  'warehouse-address': "Adresse de l'entrepôt de la société",
+  industry: 'Industrie',
   'supplier-profile': 'Profil fournisseur',
   'supplier-contact': 'Contact fournisseur',
   'product-origin': 'Origine du produit',
-  'status': 'Statut',
+  status: 'Statut',
   'pending-product-verification': 'Vérification du produit en attente',
   'delivery-address': 'Adresse de livraison',
   'return-email': 'Mail pour répondre',
-  'request-sample': 'Demande d\'échantillon',
-  'invalid-password': 'Votre mot de passe est trop faible, minimum 8 caractères, essayez d\'ajouter des chiffres et des caractères spéciaux',
+  'request-sample': "Demande d'échantillon",
+  'invalid-password':
+    "Votre mot de passe est trop faible, minimum 8 caractères, essayez d'ajouter des chiffres et des caractères spéciaux",
   'respect-cookie': 'Nous respectons votre vie privée',
-  'respect-cookie-text': 'Nous utilisons des cookies pour améliorer votre expérience de navigation, diffuser des publicités ou du contenu personnalisés et analyser notre trafic. En cliquant sur \'Accepter les cookies\', vous consentez à notre utilisation des coolies.',
+  'respect-cookie-text':
+    "Nous utilisons des cookies pour améliorer votre expérience de navigation, diffuser des publicités ou du contenu personnalisés et analyser notre trafic. En cliquant sur 'Accepter les cookies', vous consentez à notre utilisation des coolies.",
   'accept-cookies': 'Accepter les cookies',
   'reject-cookies': 'Refuser les cookies',
   'by-signing-agree': 'En vous inscrivant, vous acceptez nos',
-  'of-use-and': 'd\'utilisation et',
+  'of-use-and': "d'utilisation et",
   'suppliers-word': 'Fournisseurs',
-  'suppliers-caption': 'Découvrez notre large gamme de fruits. Ceux-ci incluent les mangues, les papayes, le sop aigre, les pastèques, les avocats, etc. Environ 60% des produits ici proviennent du Nigeria ; proéminents pour leur goût sucré et leur durée de conservation élevée, tandis que les 40% restants proviennent d\'Afrique du Nord.',
+  'suppliers-caption':
+    "Découvrez notre large gamme de fruits. Ceux-ci incluent les mangues, les papayes, le sop aigre, les pastèques, les avocats, etc. Environ 60% des produits ici proviennent du Nigeria ; proéminents pour leur goût sucré et leur durée de conservation élevée, tandis que les 40% restants proviennent d'Afrique du Nord.",
   'browse-suppliers': 'Parcourir les fournisseurs',
   'see-all-suppliers': 'Voir tous les fournisseurs',
-  'bestsellers': 'Meilleures ventes',
+  bestsellers: 'Meilleures ventes',
   'in-season-products': 'Produits de saison',
   'latest-to-oldest': 'Du plus récent au plus ancien',
+  'q1-h': 'À propos de la Société',
+  'q1-t':
+    'Terre54 la première plateforme de vente en ligne de produits africains en gros et demi-gros. Vous cherchez à vous approvisionner en produits tropicaux ? Terre54 agit comme intermédiaire entre acheteurs professionnels en Europe et vendeurs de l’Afrique en s’assurant de la qualité, de la transparence et de l’équité tout au long du processus. ',
+  'q1-h1': 'Distributeurs, nous vous apportons une solution diffèrent :',
+  'q1-h1-t1':
+    'Un accès facile à des produits d’Afrique de qualité et d’origine éthique.',
+  'q1-h1-t2': 'Une sélection rigoureuse de producteurs africains soutenus',
+  'q1-h2': 'Producteurs',
+  'q1-h2-t1': 'Meilleure rémunération ',
+  'q1-h2-t2': 'Voix aces marché',
+  'q1-h2-t3': 'Un accompagnement pour la qualité et la logistique.',
+  'q2-t':
+    'Notre vision est de faire du monde un endroit plus petit. La mission est de contribuer à fournir un accès international pour les produits en provenance du continent africain.',
+  'q2-h': 'Quel est le but précis de votre plateforme ?',
+  'q3-h': 'Vente de produits ? Fourniture de services ? Ou les deux ?',
+  'q3-t':
+    'Les deux. Nous fournissons principalement des services car les produits sur la plate-forme proviennent de fournisseurs. En revanche, nous avons des produits de clients en stock que nous avons dans l’entrepôt en France ainsi que les basics.',
+  'q4-h': 'Terre Basics?',
+  'q4-t':
+    'C’est un produit que nous conditionnons en France sur la marque terre basics depuis l’Afrique.',
+  'q5-h': 'Quels types de produits ou de services sont concernés ? ',
+  'q5-t':
+    "Produits agricoles à fins cosmétiques et de l’alimentation. Les services sont l’organisation de transport, les tests de qualité et l'accompagnement des producteurs pour vendre à l’international. ",
+  'q6-h': 'Pour quels territoires ? ',
+  'q6-t': 'Nos services s’étendent principalement de l’Afrique et l’Europe. ',
+  'q7-h': 'Où avez-vous des bureaux ?',
+  'q7-t':
+    'Nous avons une présence à Lagos, au Nigeria, A Rungis,  et à Clermont Ferrand en France. Nous sommes en train de créer des relais également sur les autres pays.',
+  'q8-h': 'Entreprises exclusivement ou particuliers ou les deux ?',
+  'q8-t':
+    'La plate-forme sert aux entreprises et aux professionnels, si vous pouvez trouver une offre pour vous, allez-y. Toutefois, nous nous spécialisons dans les achats en gros demi-gros. ',
+  'q9-h': 'Avez-vous des produits ?',
+  'q9-t': 'Nous offrons des produits en stock à nos fournisseurs.',
+  'q10-h': 'Et les prix comment cela fonctionne-t-il ?',
+  'q10-t':
+    'Nous essayons d’être aussi transparents que possible avec nos clients et fournisseurs.  Ce faisant, nous nous assurons que tout le monde reçoit sa valeur pour ses efforts.',
+  'q11-h': 'Quelle est votre gamme de produits ?',
+  'q11-t':
+    "Ceci est toujours en évolution, veuillez consulter notre catalogue en ligne pour les derniers produits à terre54.co et n'hésitez pas à nous contacter si vous avez des questions.",
+  'q11-h1-t1':
+    'Consulter notre catalogue pour en savoir plus sur nos produits agricoles.',
+  'q11-h2-t1': 'Huiles: Beurre de karité, Huile de coco, Huile de palme.',
+  'q11-h3-t1':
+    'Cultures commerciales: Gingembre, Sésame, Soja, Arachides, Café, Noix de Cajou... ',
+  'q11-h4-t1': 'Les fruits; Ananas, Bananes, Avocat, Plantain, Mangue, ...',
+  'q11-h5-t1': 'Plantes médicinaux: Hibiscus, Moringa, Stevia,',
+  'q11-h6-t1':
+    "Aliments emballés en 1kg, 5kg, 10kg, …sur commande comme le Garri, d'egusi, l'écrevisse en poudre, haricots en poudre, la farine de manioc, et d'autres.",
+  'q11-h6': 'Aliments emballés',
+  'q11-h7-t1':
+    'Nous sommes en mesure de nous engager dans l’agriculture sous contrat avec nos partenaires pour l’agriculture biologique de légumes ainsi que d’autres comme le gingembre, l’hibiscus, les noix de tigre, les epices comme le paprika, le curcuma, le poivre noir.',
+  'q11-h7': 'Organique.',
+  'q11-h8-t1': 'Contactez-nous pour plus d’informations.',
+  'q12-h': 'Pourquoi acheter chez terre54.co ?',
+  'q12-t':
+    'Nous travaillons directement avec les producteurs parfois petits, parfois moyens pour intervenir en tant que partenaire en termes de qualité, et accès marché. En le faisons, les producteurs trouvent un partenaire privilégié en circuit court.',
+  'q13-h': 'Comment puis-je vous contacter ? ',
+  'q13-h1-t1': 'De l’Europe : +33760926545 ',
+  'q13-h2-t1': 'D’Afrique : +2348059201672',
+  'q13-h3-t1':
+    'Du lundi au vendredi de 8h à 18h et le samedi de 9h à 12h. Ou envoyez-nous un courriel à contact@terre54.co',
+  'q14-h': 'Comment puis-je savoir que les données sont gérées avec Terre54 ?',
+  'q14-t':
+    'Votre vie privée est de la plus haute importance pour nous. Nous travaillons dur pour nous assurer que vos coordonnées restent sûres et sécurisées. Si vous voulez en savoir plus sur la façon dont nous assurons votre vie privée, veuillez consulter notre déclaration de confidentialité.',
+  'q15-h': 'Mes informations seront-elles partagées avec des tiers?  ',
+  'q15-t':
+    'Tous les renseignements personnels fournis par vous seront traités avec le plus grand soin et la plus grande responsabilité. Vos informations ne seront pas vendues ou partagées avec un tiers.  Terre54 respecte à juste titre votre vie privée. En savoir plus sur la façon dont nous protégeons vos données en nous référant à la déclaration de confidentialité de Terre54.',
+  'q16-h':
+    'Je veux vendre sur la plate-forme terre54. Comment puis-je faire cela ?',
+  'q16-t':
+    'Contactez-nous par mail à contact@terre54.co ou visiter notre site terre54.co',
+  'q17-h': 'Comment puis-je mettre à jour les détails de mon compte ?',
+  'q17-t':
+    'Lorsque vous êtes connecté, cliquez sur le menu « Mon compte » dans le menu dropdown qui apparaît à côté de votre nom sur le côté supérieur droit de la page. Vous serez dirigé vers les détails de votre compte. Faites défiler vers le bas pour trouver les informations de votre compte. Cliquez sur « modifier » à côté de la section d’informations que vous souhaitez mettre à jour. N’oubliez pas de cliquer sur « enregistrer » pour vous assurer que vos nouveaux détails sont stockés sur notre système.',
+  'q18-h': 'Comment puis-je me déconnecter de mon compte ?',
+  'q18-t':
+    'Vous pouvez vous déconnecter en cliquant sur le lien « déconnecter » en haut à droite du menu de la page situé à côté de votre nom dans le coin supérieur droit de la page.',
+  'q19-h':
+    'Que dois-je faire lorsque j’ai de la difficulté à commander sur votre site Web ?',
+  'q19-t':
+    'Si vous rencontrez encore des difficultés, vous pouvez communiquer avec le Service client: contact@terre54.co ',
+  'q20-h': 'Dois-je activer les cookies dans mon navigateur ?',
+  'q20-t':
+    'Les cookies sont le nom de petites quantités de données envoyées à partir d’un site Web à votre navigateur. Il est ensuite stocké sur le disque dur de votre ordinateur. Les préférences de votre navigateur sont généralement activées par les cookies (ce qui signifie que chaque site Web peut envoyer son propre cookie à votre navigateur). Les cookies ne peuvent pas accéder à vos informations personnelles mais utilisent plutôt des identifiants anonymes uniques. Les cookies devront être activés sur votre navigateur pour vous permettre d’ajouter des produits à votre panier et d’accéder aux informations de votre compte. Si vous utilisez un ordinateur public ou partagez votre ordinateur avec d’autres, assurez-vous de vous déconnecter avant de laisser votre ordinateur sans surveillance afin de protéger les informations de votre compte. Pour en savoir plus sur la façon dont nous utilisons les cookies, veuillez consulter notre déclaration de confidentialité.',
+  'q21-h': 'Comment puis-je commander en ligne ?',
+  'q21-t':
+    'Terre54.co facilite la recherche et commande des produits. Si vous êtes à la recherche d’un produit particulier, il vous suffit de discuter avec nous.',
+  'q22-h':
+    'Y a-t-il un moyen pour moi de voir le produit avant de l’acheter ? ',
+  'q22-t':
+    'Certains de nos produits sont disponibles pour inspection ou nous pouvons envoyer des échantillons contactez-nous pour plus d’informations : contact@terre54 ou visiter notre site terre54.co',
+  'q23-h': 'Que se passe-t-il si j’ai commis une erreur avec ma commande ? ',
+  'q23-t': 'Veuillez contacter immédiatement notre équipe du Service cliente. ',
+  'q24-h': 'Puis-je annuler ma commande ?',
+  'q24-t': 'Oui, en ligne avec un représentant, par courriel ou par téléphone.',
+  'q25-h': 'Minimum commande ? ',
+  'q25-t':
+    'Oui, sauf pour les produits disponibles en stock veuillez nous contacter.',
+  'q26-h': 'Commander un produit hors stock ?',
+  'q26-t':
+    'Veuillez noter que les articles sont disponibles pendant que les stocks durent et sur précommande. Si vous avez d’autres demandes, n’hésitez pas à regarder nos catalogues en ligne ou communiquer avec le Service client.',
+  'q27-h': 'Pouvez-vous placer des articles sur commande arrière ?',
+  'q27-t': 'Oui, les clients peuvent commander des produits en back order.',
+  'q28-h':
+    'Quand puis-je m’attendre à ce que de nouveaux produits soient répertoriés sur votre site Web?',
+  'q28-t':
+    'Notre site web est constamment mis à jour avec l’arrivée de nouveaux stocks. Nous mettons à jour notre gamme de produits au fur et à mesure que de produits mais n’attendez pas de commander.  ',
+  'q29-h': 'Dans quelle devise sont vos prix ? ',
+  'q29-t': 'Tous les prix sont en euros.',
+  'q30-h': 'Vos prix incluent-ils la TVA ?',
+  'q30-t':
+    'Oui, la TVA à l’importation.  Puisque les marchandises sont expédiées d’un pays hors de l’UE, par exemple le Nigéria, nous devrons alors payer la TVA à l’importation pour les marchandises au service des douanes.',
+  'q31-h':
+    'Si vous trouvez une meilleure offre (prix/ qualité/ service) en vente ailleurs ?',
+  'q31-t':
+    'Oui, faites-nous savoir et nous serons heureux de faire une meilleure offre.',
+  'q32-h': 'Comment je paie ?',
+  'q32-t':
+    'Paiement à la livraison (POD), Virement bancaire électronique et par carte bancaire classique.',
+  'q33-h': 'Paiement à la livraison (POD)',
+  'q33-t':
+    'Paiement à la livraison n’est disponible que pour certaines régions. On peut payer lorsque les marchandises arrivent par transfert ou Carte bancaire.',
+  'q34-h':
+    'Dans quelle mesure est-il sécurisé d’utiliser ma carte de crédit pour effectuer un paiement ? ',
+  'q34-t':
+    'À Terre54.com nous nous assurons que les transactions par carte de crédit se déroulent dans un environnement sûr basé sur les paiements Stripe, conforme pci, le système de sécurité des paiements le plus rigoureux disponible aujourd’hui en savoir plus  ici. ',
+  'q35-h': 'Comment puis-je savoir si ma commande a été prise en compte?',
+  'q35-t':
+    'Les transactions réussies sont suivies d’un courriel de confirmation, qui inclut votre numéro de commande unique, envoyé à l’adresse que vous fournissez. Si, pour une raison quelconque, vous ne recevez pas de courriel de confirmation ou de communication de Terre54 dans les 24 heures, veuillez contacter le Service clientèle à contact@terre54.co pour confirmer votre commande.',
+  'q36-h': ' Combien dois-je payer pour la livraison ?',
+  'q36-t':
+    'Nos partenaires établissent les prix de livraison que nous communiquent au moment de l’achat des produits disponibles en stock ou après avoir demandé un prix.',
+  'q37-h': ' Combien de temps prenez-vous pour livrer ?',
+  'q37-t':
+    'Pour les envois aériens, 10 jours. Pour les commandes disponibles en stock 3 Jours en France et 5 jours en EU. Pour livraison par bateau, veuillez nous envoyer un courriel sur contact@terre54.co ',
+  'q38-h':
+    ' Puis-je modifier l’adresse de livraison de ma commande une fois que j’ai passé la commande ? ',
+  'q38-t':
+    'Contactez-nous pour voir ce qui est possible si vous voulez des changements.contact@Terre54.co     ',
+  'q39-h': ' Que dois-je faire si je reçois un article défectueux ? ',
+  'q39-t':
+    'Des contrôles de qualité stricts sont effectués pour s’assurer que nos produits sont de la plus haute qualité et exempts de défauts. Toutefois, si vous avez reçu des produits défectueux veuillez contacter le service client à contact@Terre54.co',
+  'q39-h1-t1':
+    'Si vous avez d’autres questions que nous n’avons pas n’hésitez pas à contacter notre équipe à contact@Terre54.co',
   'faq-h1': 'À propos de la Société',
-  'faq-t1': 'Terre54 la première plateforme de vente en ligne de produits africains en gros et demi-gros. Vous cherchez à vous approvisionner en produits tropicaux ? Terre54 agit comme intermédiaire entre acheteurs professionnels en Europe et vendeurs de l’Afrique en s’assurant de la qualité, de la transparence et de l’équité tout au long du processus. ',
+  'faq-t1': 'Terre54 la première plateforme de vente en ligne de produits africains en gros et demi-gros. Vous cherchez à vous approvisionner en produits tropicaux? Terre54 agit comme intermédiaire entre acheteurs professionnels en Europe et vendeurs de l’Afrique en s’assurant de la qualité, de la transparence et de l’équité tout au long du processus. ',
   'subscription-aded': 'Abonnement ajouté avec succès',
   'subscription-failed': 'Nous n\'avons pas pu ajouter votre abonnement, veuillez réessayer.',
   'weekly-info': 'dose hebdomadaire d\'articles et de ressources',

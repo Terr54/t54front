@@ -1,162 +1,261 @@
 export const accordions = [
   {
-    id: 0,
-    text: 'faq-t1',
-    heading: 'faq-h1'
-  },
-  {
     id: 1,
-    text: 'Notre vision est de faire du monde un endroit plus petit. La mission est de contribuer à fournir un accès international pour les produits en provenance du continent africain.',
-    heading: 'Quel est le but précis de votre plateforme ?'
-  },
-  {
-    id: 2,
-    text: 'Les deux. Nous fournissons principalement des services car les produits sur la plate-forme proviennent de fournisseurs. En revanche, nous avons des produits de clients en stock que nous avons dans l’entrepôt en France ainsi que les basics.',
-    heading: 'Vente de produits ? Fourniture de services ? Ou les deux ?'
-  },
-  {
-    id: 3,
-    text: 'C’est un produit que nous conditionnons en France sur la marque terre basics depuis l’Afrique.',
-    heading: 'Terre Basics?'
-  },
-  {
-    id: 4,
-    text: "Produits agricoles à fins cosmétiques et de l’alimentation. Les services sont l’organisation de transport, les tests de qualité et l'accompagnement des producteurs pour vendre à l’international. ",
-    heading: 'Quels types de produits ou de services sont concernés ? '
-  },
-  {
-    id: 5,
-    text: 'Nos services s’étendent principalement de l’Afrique et l’Europe. ',
-    heading: 'Pour quels territoires ? '
-  },
-  {
-    id: 6,
-    text: 'Nous avons une présence à Lagos, au Nigeria, A Rungis,  et à Clermont Ferrand en France. Nous sommes en train de créer des relais également sur les autres pays.',
-    heading: 'Où avez-vous des bureaux ?'
-  },
-  {
-    id: 7,
-    text: 'La plate-forme sert aux entreprises et aux professionnels, si vous pouvez trouver une offre pour vous, allez-y. Toutefois, nous nous spécialisons dans les achats en gros demi-gros. ',
-    heading: 'Entreprises exclusivement ou particuliers ou les deux ?'
-  },
-  {
-    id: 8,
-    text: 'Nous offrons des produits en stock à nos fournisseurs.',
-    heading: 'Avez-vous des produits ?'
-  },
-  {
-    id: 9,
-    heading: 'Et les prix comment cela fonctionne-t-il ?',
-    text: 'Nous essayons d’être aussi transparents que possible avec nos clients et fournisseurs.  Ce faisant, nous nous assurons que tout le monde reçoit sa valeur pour ses efforts.'
-  },
-  {
-    id: 10,
-    heading: 'Quelle est votre gamme de produits ?',
-    text: 'Nous essayons d’être aussi transparents que possible avec nos clients et fournisseurs.  Ce faisant, nous nous assurons que tout le monde reçoit sa valeur pour ses efforts.',
+    heading: 'q1-h',
+    text: 'q1-t',
     texts: [
       {
         id: '0',
-        text: 'Consulter notre catalogue pour en savoir plus sur nos produits agricoles.'
+        heading: 'q1-h1',
+        text: ['q1-h1-t1', 'q1-h1-t2'],
       },
       {
         id: '1',
-        text: 'Huiles: Beurre de karité, Huile de coco, Huile de palme.'
+        heading: 'q1-h2',
+        text: ['q1-h2-t1', 'q1-h2-t2', 'q1-h2-t3'],
       },
-      {
-        id: '2',
-        text: 'Cultures commerciales: Gingembre, Sésame, Soja, Arachides, Café, Noix de Cajou... '
-      },
-      {
-        id: '3',
-        text: 'Les fruits; Ananas, Bananes, Avocat, Plantain, Mangue, ...'
-      },
-      {
-        id: '4',
-        text: 'Plantes médicinaux: Hibiscus, Moringa, Stevia,'
-      },
-      {
-        id: '5',
-        text: "Aliments emballés en 1kg, 5kg, 10kg, …sur commande comme le Garri, d'egusi, l'écrevisse en poudre, haricots en poudre, la farine de manioc, et d'autres.",
-        heading: 'Aliments emballés'
-      },
-      {
-        id: '6',
-        text: 'Nous sommes en mesure de nous engager dans l’agriculture sous contrat avec nos partenaires pour l’agriculture biologique de légumes ainsi que d’autres comme le gingembre, l’hibiscus, les noix de tigre, les epices comme le paprika, le curcuma, le poivre noir. ',
-        heading: 'Organique.'
-      },
-      {
-        id: '7',
-        text: 'Contactez-nous pour plus d’informations.'
-      }
-    ]
+    ],
+  },
+  {
+    id: 2,
+    text: 'q2-t',
+    heading: 'q2-h',
+  },
+  {
+    id: 3,
+    text: 'q3-t',
+    heading: 'q3-h',
+  },
+  {
+    id: 4,
+    text: 'q4-t',
+    heading: 'q4-h',
+  },
+  {
+    id: 5,
+    text: 'q5-t',
+    heading: 'q5-h',
+  },
+  {
+    id: 6,
+    text: 'q6-t',
+    heading: 'q6-h',
+  },
+  {
+    id: 7,
+    text: 'q7-t',
+    heading: 'q7-h',
+  },
+  {
+    id: 8,
+    text: 'q8-t',
+    heading: 'q8-h',
+  },
+  {
+    id: 9,
+    text: 'q9-t',
+    heading: 'q9-h',
+  },
+  {
+    id: 10,
+    text: 'q10-t',
+    heading: 'q10-h',
   },
   {
     id: 11,
-    heading: 'Pourquoi acheter chez terre54.co ?',
-    text: 'Nous travaillons directement avec les producteurs parfois petits, parfois moyens pour intervenir en tant que partenaire en termes de qualité, et accès marché. En le faisons, les producteurs trouvent un partenaire privilégié en circuit court.'
+    text: 'q11-t',
+    heading: 'q11-h',
+    texts: [
+      {
+        id: '0',
+        text: 'q11-h1-t1',
+      },
+      {
+        id: '1',
+        text: 'q11-h2-t1',
+      },
+      {
+        id: '2',
+        text: 'q11-h3-t1',
+      },
+      {
+        id: '3',
+        text: 'q11-h4-t1',
+      },
+      {
+        id: '4',
+        text: 'q11-h5-t1',
+      },
+      {
+        id: '5',
+        text: 'q11-h6-t1',
+        heading: 'q11-h6',
+      },
+      {
+        id: '6',
+        text: 'q11-h7-t1',
+        heading: 'q11-h7',
+      },
+      {
+        id: '7',
+        text: 'Contactez-nous pour plus d’informations.',
+      },
+    ],
   },
   {
     id: 12,
-    heading: 'Comment puis-je vous contacter ? ',
-    texts: [
-      {
-        text: 'De l’Europe : +33760926545 '
-      },
-      {
-        text: 'D’Afrique : +2348059201672'
-      },
-      {
-        text: 'Du lundi au vendredi de 8h à 18h et le samedi de 9h à 12h. Ou envoyez-nous un courriel à contact@terre54.co'
-      }
-    ]
+    heading: 'q12-h',
+    text: 'q12-t',
   },
   {
     id: 13,
-    heading:
-      'Comment puis-je savoir que les données sont gérées avec Terre54 ?',
-    text: 'Votre vie privée est de la plus haute importance pour nous. Nous travaillons dur pour nous assurer que vos coordonnées restent sûres et sécurisées. Si vous voulez en savoir plus sur la façon dont nous assurons votre vie privée, veuillez consulter notre déclaration de confidentialité.'
+    heading: 'q13-h',
+    texts: [
+      {
+        text: 'q13-h1-t1',
+      },
+      {
+        text: 'q13-h2-t1',
+      },
+      {
+        text: 'q13-h3-t1',
+      },
+    ],
   },
   {
     id: 14,
-    heading: 'Mes informations seront-elles partagées avec des tiers?  ',
-    text: 'Tous les renseignements personnels fournis par vous seront traités avec le plus grand soin et la plus grande responsabilité. Vos informations ne seront pas vendues ou partagées avec un tiers.  Terre54 respecte à juste titre votre vie privée. En savoir plus sur la façon dont nous protégeons vos données en nous référant à la déclaration de confidentialité de Terre54.'
+    heading: 'q14-h',
+    text: 'q14-t',
   },
   {
     id: 15,
-    heading:
-      'Je veux vendre sur la plate-forme terre54. Comment puis-je faire cela ?',
-    text: 'Contactez-nous par mail à contact@terre54.co ou visiter notre site terre54.co'
+    heading: 'q15-h',
+    text: 'q15-t',
   },
   {
     id: 16,
-    heading: 'Comment puis-je mettre à jour les détails de mon compte ?',
-    text: 'Lorsque vous êtes connecté, cliquez sur le menu « Mon compte » dans le menu dropdown qui apparaît à côté de votre nom sur le côté supérieur droit de la page. Vous serez dirigé vers les détails de votre compte. Faites défiler vers le bas pour trouver les informations de votre compte. Cliquez sur « modifier » à côté de la section d’informations que vous souhaitez mettre à jour. N’oubliez pas de cliquer sur « enregistrer » pour vous assurer que vos nouveaux détails sont stockés sur notre système.'
+    heading: 'q16-h',
+    text: 'q16-t',
   },
   {
     id: 17,
-    heading: 'Comment puis-je me déconnecter de mon compte ?',
-    text: 'Vous pouvez vous déconnecter en cliquant sur le lien « déconnecter » en haut à droite du menu de la page situé à côté de votre nom dans le coin supérieur droit de la page.'
+    heading: 'q17-h',
+    text: 'q17-t',
   },
   {
     id: 18,
-    heading:
-      'Que dois-je faire lorsque j’ai de la difficulté à commander sur votre site Web ?',
-    text: 'Si vous rencontrez encore des difficultés, vous pouvez communiquer avec le Service client: contact@terre54.co '
+    heading: 'q18-h',
+    text: 'q18-t',
   },
   {
     id: 19,
-    heading: 'Dois-je activer les cookies dans mon navigateur ?',
-    text: 'Les cookies sont le nom de petites quantités de données envoyées à partir d’un site Web à votre navigateur. Il est ensuite stocké sur le disque dur de votre ordinateur. Les préférences de votre navigateur sont généralement activées par les cookies (ce qui signifie que chaque site Web peut envoyer son propre cookie à votre navigateur). Les cookies ne peuvent pas accéder à vos informations personnelles mais utilisent plutôt des identifiants anonymes uniques. Les cookies devront être activés sur votre navigateur pour vous permettre d’ajouter des produits à votre panier et d’accéder aux informations de votre compte. Si vous utilisez un ordinateur public ou partagez votre ordinateur avec d’autres, assurez-vous de vous déconnecter avant de laisser votre ordinateur sans surveillance afin de protéger les informations de votre compte. Pour en savoir plus sur la façon dont nous utilisons les cookies, veuillez consulter notre déclaration de confidentialité.'
+    heading: 'q19-h',
+    text: 'q19-t',
   },
   {
     id: 20,
-    heading: 'Comment puis-je commander en ligne ?',
-    text: 'Terre54.co facilite la recherche et commande des produits. Si vous êtes à la recherche d’un produit particulier, il vous suffit de discuter avec nous.'
+    heading: 'q20-h',
+    text: 'q20-t',
   },
   {
     id: 21,
-    heading:
-      'Y a-t-il un moyen pour moi de voir le produit avant de l’acheter ? ',
-    text: 'Certains de nos produits sont disponibles pour inspection ou nous pouvons envoyer des échantillons contactez-nous pour plus d’informations : contact@terre54 ou visiter notre site terre54.co'
-  }
+    heading: 'q21-h',
+    text: 'q21-t',
+  },
+  {
+    id: 22,
+    heading: 'q22-h',
+    text: 'q22-t',
+  },
+  {
+    id: 23,
+    heading: 'q23-h',
+    text: 'q23-t',
+  },
+  {
+    id: 24,
+    heading: 'q24-h',
+    text: 'q24-t',
+  },
+  {
+    id: 25,
+    heading: 'q25-h',
+    text: 'q25-t',
+  },
+  {
+    id: 26,
+    heading: 'q26-h',
+    text: 'q26-t',
+  },
+  {
+    id: 27,
+    heading: 'q27-h',
+    text: 'q27-t',
+  },
+  {
+    id: 28,
+    heading: 'q28-h',
+    text: 'q28-t',
+  },
+  {
+    id: 29,
+    heading: 'q29-h',
+    text: 'q29-t',
+  },
+  {
+    id: 30,
+    heading: 'q30-h',
+    text: 'q30-t',
+  },
+  {
+    id: 31,
+    heading: 'q31-h',
+    text: 'q31-t',
+  },
+  {
+    id: 32,
+    heading: 'q32-h',
+    text: 'q32-t',
+  },
+  {
+    id: 33,
+    heading: 'q33-h',
+    text: 'q33-t',
+  },
+  {
+    id: 34,
+    heading: 'q34-h',
+    text: 'q34-t',
+  },
+  {
+    id: 35,
+    heading: 'q35-h',
+    text: 'q35-t',
+  },
+  {
+    id: 36,
+    heading: 'q36-h',
+    text: 'q36-t',
+  },
+  {
+    id: 37,
+    heading: 'q37-h',
+    text: 'q37-t',
+  },
+  {
+    id: 38,
+    heading: 'q38-h',
+    text: 'q38-t',
+  },
+  {
+    id: 39,
+    heading: 'q39-h',
+    text: 'q39-t',
+    texts: [
+      {
+        id: '0',
+        text: 'q39-h1-t1',
+      },
+    ],
+  },
 ];

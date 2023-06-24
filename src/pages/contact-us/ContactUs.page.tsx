@@ -21,11 +21,12 @@ const ContactUs = () => {
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
-              padding: '30px 0px 50px'
+              padding: '30px 0px 50px',
             }}
           >
             <HeaderCaption
               heading={t('sign-up-to-start')}
+              HtextAlign='center'
               renderIcon={() => (
                 <Button
                   text={t('signup-now')}

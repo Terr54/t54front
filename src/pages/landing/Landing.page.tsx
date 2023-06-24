@@ -522,7 +522,7 @@ const Landing = () => {
         <ServicesContainer>
           {
             blogData.filter((d, idx) => idx < 3).map((data, idx) => (
-              <BlogCard key={data.id} date={data.date} tradeType={data.tradeType} caption={data.caption} heading={data.heading} bgImage={data.bgImage} margin={idx === 1 ? '0px 16px' : ''} onClick={() => navigate(path.CULTIVATION)} />
+              <BlogCard key={data.id} date={data.date} tradeType={data.tradeType} caption={data.caption} heading={data.heading} bgImage={data.bgImage} margin={idx === 1 ? '0px 16px' : ''} onClick={() => navigate(`/blog/cultivation/${data.linkName}`)} />
             ))
           }
         </ServicesContainer>

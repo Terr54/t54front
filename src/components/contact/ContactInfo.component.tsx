@@ -8,11 +8,19 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import ContactDetail from './ContactDetail.component';
 
-import { SocialIcons, Heading, StyledLink } from './Contact.styles';
+import { SocialIcons, Heading, StyledLink, ContactInfos } from './Contact.styles';
 import { useTranslation } from 'react-i18next';
 
 const ContactInfo = () => {
   const { t } = useTranslation();
+
+  const borderStyle = {
+    borderRight: '1px solid #ccc',
+    borderLeft: '1px solid #ccc',
+    alignItems: 'center',
+    margin: '0px 17px',
+    padding: '0px 17px'
+  }
 
   const infos = [
     {
@@ -45,13 +53,7 @@ const ContactInfo = () => {
     >
       <div>
         <Heading>{t('contact-t54')}</Heading>
-        <div
-          style={{
-            display: 'flex',
-            justifyContent: 'space-between',
-            marginTop: '50px'
-          }}
-        >
+        <ContactInfos>
           {infos
             .filter((e, i) => i === 0)
             .map((info) => (
@@ -70,13 +72,7 @@ const ContactInfo = () => {
                 renderIcon={() => info.icon}
                 title={info.title}
                 value={info.value}
-                style={{
-                  borderRight: '1px solid #ccc',
-                  borderLeft: '1px solid #ccc',
-                  alignItems: 'center',
-                  margin: '0px 17px',
-                  padding: '0px 17px'
-                }}
+                style={borderStyle}
               />
             ))}
           {infos
@@ -89,7 +85,7 @@ const ContactInfo = () => {
                 value={info.value}
               />
             ))}
-        </div>
+        </ContactInfos>
       </div>
       <SocialIcons>
         <StyledLink href="https://www.linkedin.com/company/terre54" target='_blank' rel="noreferrer"><LinkedInIcon /></StyledLink>
