@@ -30,10 +30,10 @@ export interface headerCaptionProps {
   onClick?: () => void;
   headingJustify?: string;
   headingAlign?: string;
-  headingFlex?: string
+  headingFlex?: string;
   headingDisplay?: string;
   numberOfLines?: number;
-  headingStyle?: object
+  headingStyle?: object;
 }
 
 export const Container = styled.div<headerCaptionProps>`
@@ -44,24 +44,21 @@ export const Container = styled.div<headerCaptionProps>`
   align-items: ${({ alignItems }) => alignItems};
   justify-content: ${({ justifyContent }) => justifyContent};
   flex-direction: ${({ flexDirection }) => flexDirection};
-  z-index: 1;
   @media (max-width: 768px) {
     width: 90%;
     margin-top: ${({ marginTop }) => marginTop};
     height: ${({ height }) => height};
-  };
-
-  
+    margin-bottom: 20px;
+  }
 `;
 export const H1heading = styled.h1<headerCaptionProps>`
- margin: ${({ headingMargin }) => (headingMargin ?? '0px')};
+  margin: ${({ headingMargin }) => headingMargin ?? '0px'};
   text-align: ${({ HtextAlign }) => HtextAlign};
-   @media (max-width: 768px) {
+  @media (max-width: 768px) {
     width: 100%;
     z-index: 1;
     text-align: ${({ MtextAlign }) => MtextAlign};
-
-  };
+  }
 `;
 export const Heading = styled.div<headerCaptionProps>`
   font-size: ${({ headingSize }) =>
@@ -78,9 +75,7 @@ export const Heading = styled.div<headerCaptionProps>`
   @media (max-width: 768px) {
     width: 100%;
     z-index: 1;
-
-  };
-  
+  }
 `;
 
 export const Caption = styled(Heading)<headerCaptionProps>`
@@ -89,17 +84,16 @@ export const Caption = styled(Heading)<headerCaptionProps>`
   width: ${({ captionLength }) =>
     typeof captionLength === 'string' ? captionLength : `${captionLength}%`};
   & > p {
-    margin: ${({ captionMargin }) =>
-      captionMargin ?? '18px 0px'};
+    margin: ${({ captionMargin }) => captionMargin ?? '18px 0px'};
     text-align: ${({ textAlign }) => textAlign};
-  };
-  display: ${({ numberOfLines }) => numberOfLines ? '-webkit-box' : ''};
+  }
+  display: ${({ numberOfLines }) => (numberOfLines ? '-webkit-box' : '')};
   -webkit-line-clamp: ${({ numberOfLines }) => numberOfLines ?? ''};
   -webkit-box-orient: vertical;
-  overflow: ${({ numberOfLines }) => numberOfLines ? 'hidden' : ''};;
-  text-overflow: ${({ numberOfLines }) => numberOfLines ? 'ellipses' : ''};
+  overflow: ${({ numberOfLines }) => (numberOfLines ? 'hidden' : '')};
+  text-overflow: ${({ numberOfLines }) => (numberOfLines ? 'ellipses' : '')};
   color: ${({ captionColor }) => captionColor};
-   @media (max-width: 768px) {
+  @media (max-width: 768px) {
     display: flex;
     flex-direction: row;
   }

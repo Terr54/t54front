@@ -28,6 +28,9 @@ export const ProductCard = styled.div<productItemProps>`
   :hover {
     opacity: 0.8;
   }
+  @media (max-width: 768px) {
+    width: 90%;
+  }
 `;
 export const ProductImg = styled.div<productItemProps>`
   width: ${({ coverWidth }) =>

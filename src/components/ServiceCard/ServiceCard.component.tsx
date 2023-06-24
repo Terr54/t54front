@@ -5,7 +5,7 @@ const ServiceCard = ({
   bgColor,
   padding = '26px',
   width = '22vw',
-  heightMobile = '40vh',
+  heightMobile = '30vh',
   height = '',
   borderRadius = '12px',
   margin = '0px 8px',

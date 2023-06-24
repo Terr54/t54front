@@ -79,7 +79,7 @@ const Footer = () => {
   ];
 
   return (
-    <SectionWrapper height={100} bgColor="#531703">
+    <SectionWrapper height={100} bgColor="#531703" padding='44px 44px 10px'>
       <Container>
         <div>
           <Logo width={102} height={35} />
@@ -93,6 +93,9 @@ const Footer = () => {
             headingMargin="22px 0px 0px"
             alignItems='flex-start'
             captionMargin='20px 0px'
+            HtextAlign='left'
+            headingStyle={{ marginTop: '20px' }}
+            MtextAlign='left'
           />
         </div>
         <FooterColumn heading={t('footer-company')} values={company} />
