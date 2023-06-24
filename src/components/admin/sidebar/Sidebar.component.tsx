@@ -4,82 +4,49 @@ import SidebarItem from '../sidebar-item/SidebarItem.component';
 import classes from './Sidebar.module.css';
 import { useTranslation } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
+import { useSelector } from '../../../store';
+import { SidebarItemType } from '../../../assets/data/sidebarItems';
 
-interface sidebarProps {
+interface SidebarProps {
   width?: string;
-  sidebarItems?: any;
+  sidebarItems?: SidebarItemType[];
 }
 
-const Sidebar = ({ width, sidebarItems }: sidebarProps) => {
+const Sidebar = ({ width, sidebarItems }: SidebarProps) => {
+  const user = useSelector(state => state.user.payload);
   const { t } = useTranslation();
   const navigate = useNavigate();
   const [active, setActive] = useState<string>('');
-  const [drop, setDrop] = useState<boolean>(false);
   return (
     <div className={classes.container} style={{ width }}>
       <div style={{ width: '100%', display: 'flex', justifyContent: 'center' }}>
         <Logo width={110} height={30} />
       </div>
       <div style={{ marginTop: '30px' }}>
-        {sidebarItems
-          .filter((item: any, idx: any) => idx === 0)
-          .map((item: any) => (
-            <SidebarItem
-              active={item.title === active}
-              key={item.id}
-              text={t(item.title)}
-              renderIcon={() => <item.icon />}
-              onClick={() => {
-                setActive(item.title);
-                navigate(item?.to);
-              }}
-            />
-          ))}
-        {sidebarItems
-          .filter((item: any, idx: any) => idx === 1)
-          .map((item: any) => (
-            <SidebarItem
-              active={item.title === active}
-              key={item.id}
-              text={t(item.title)}
-              renderIcon={() => <item.icon />}
-              onClick={() => {
-                setActive(item.title);
-                setDrop(!drop);
-              }}
-            />
-          ))}
-        {drop &&
-          sidebarItems
-            .filter((item: any, idx: any) => idx > 1 && idx < 4)
-            .map((item: any) => (
-              <SidebarItem
-                active={item.title === active}
-                key={item.id}
-                text={t(item.title)}
-                renderIcon={() => <item.icon />}
-                onClick={() => {
-                  setActive(item.title);
-                  setDrop(true);
-                  navigate(item?.to)
-                }}
-                style={{ paddingLeft: '30px' }}
-              />
-            ))}
-        {sidebarItems
-          .filter((item: any, idx: any) => idx > 3)
-          .map((item: any) => (
-            <SidebarItem
-              active={item.title === active}
-              key={item.id}
-              text={t(item.title)}
-              renderIcon={() => <item.icon />}
-              onClick={() => {
-                setActive(item.title);
-                navigate(item?.to);
-              }}
-            />
-          ))}
+        {
+          user && sidebarItems ? (
+            <>
+              {
+                sidebarItems
+                .filter(s => s.roles?.some(r => r?.toLocaleUpperCase() === user.role?.name?.toLocaleUpperCase()))
+                .map(item => {
+                  return (
+                    <SidebarItem
+                      active={item.title === active}
+                      key={item.id}
+                      text={t(item.title)}
+                      renderIcon={() => <item.icon />}
+                      onClick={() => {
+                        setActive(item.title);
+                        if (item.to) navigate(item?.to);
+                      }}
+                    />
+                  )
+                })
+              }
+            </>
+          ) : null
+        }
       </div>
     </div>
   );

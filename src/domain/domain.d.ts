@@ -32,8 +32,8 @@ export interface Account extends BaseSerialEntityWithCreatorAudit {
     availableBalance: number;
     accountType: string;
     billingAddresses: JsonBWrapper<BillingAddress[]>;
-    withdrawalOpen: boolean;
     closed: boolean;
+    withdrawalOpen: boolean;
 }
 
 export interface AccountType {
@@ -171,6 +171,31 @@ export interface MediaSlot extends BaseEntityWithCreatorAudit {
     externalKey: string;
 }
 
+export interface ContactInbox extends BaseSerialEntity {
+    name: string;
+    email: string;
+    subject: string;
+    message: string;
+    archived: boolean;
+    read: boolean;
+    createdAt: Date;
+    updatedAt: Date;
+    userId: string;
+}
+
+export interface NewsLetter extends BaseEntityWithCreatorAudit {
+    topic: string;
+    content: string;
+}
+
+export interface NewsLetterSubscription extends BaseEntity {
+    email: string;
+    topic: string;
+    createdAt: Date;
+    updatedAt: Date;
+    userId: string;
+}
+
 export interface Place extends BaseEntity {
     country: string;
     locality: string;
@@ -267,6 +292,13 @@ export interface SignUpUserRequest {
     password: string;
     firstName: string;
     lastName: string;
+}
+
+export interface ContactInboxRequest {
+    name: string;
+    email: string;
+    subject: string;
+    message: string;
 }
 
 export interface CreateProductRequest {

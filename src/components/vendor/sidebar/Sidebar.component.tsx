@@ -10,16 +10,18 @@ import { path } from '../../../routes/paths';
 import Avatar from '../../commons/avatar/Avatar.component';
 import Button from '../../commons/controls/button/Button.component';
 import { useTranslation } from 'react-i18next';
-import { useDispatch } from '../../../store';
+import { useDispatch, useSelector } from '../../../store';
 import { logout } from '../../../store/features/slices/user';
 import classes from './Sidebar.module.css';
+import { SidebarItemType } from '../../../assets/data/sidebarItems';
 
-interface sidebarProps {
+interface SidebarProps {
   width?: string;
-  sidebarItems?: any;
+  sidebarItems?: SidebarItemType[];
 }
 
-const Sidebar = ({ width, sidebarItems }: sidebarProps) => {
+const Sidebar = ({ width, sidebarItems }: SidebarProps) => {
+  const user = useSelector(state => state.user.payload);
   const [active, setActive] = useState<string>('');
   const navigate = useNavigate();
   const location = useLocation();
@@ -51,18 +53,30 @@ const Sidebar = ({ width, sidebarItems }: sidebarProps) => {
         </div>
       </Link>
       <div style={{ marginTop: '30px' }}>
-        {sidebarItems?.map((item: any) => (
-          <SidebarItem
-            active={active === item.title}
-            key={item.id}
-            text={t(item.title)}
-            renderIcon={() => <item.icon />}
-            onClick={() => {
-              setActive(item.title);
-              navigate(item.to);
-            }}
-          />
-        ))}
+      {
+          user && sidebarItems ? (
+            <>
+              {
+                sidebarItems
+                .filter(s => s.roles?.some(r => r?.toLocaleUpperCase() === user.role?.name?.toLocaleUpperCase()))
+                .map(item => {
+                  return (
+                    <SidebarItem
+                      active={item.title === active}
+                      key={item.id}
+                      text={t(item.title)}
+                      renderIcon={() => <item.icon />}
+                      onClick={() => {
+                        setActive(item.title);
+                        if (item.to) navigate(item?.to);
+                      }}
+                    />
+                  )
+                })
+              }
+            </>
+          ) : null
+        }
       </div>
       <div className={classes.bottomSection}>
         <div
