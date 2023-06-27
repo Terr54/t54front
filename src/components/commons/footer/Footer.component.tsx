@@ -59,10 +59,10 @@ const Footer = () => {
 
   const resources = [
     {
-      id: 0,
+      id: null,
       label: t('footer-blog'),
       path: 'terre54-blog',
-      to: 'https://terre54africa.blogspot.com/2022/12/nigeria-ginger-still-gets-into-eu.html'
+      to: path.BLOG
     },
     {
       id: 1,
@@ -100,7 +100,7 @@ const Footer = () => {
         </div>
         <FooterColumn heading={t('footer-company')} values={company} />
         <FooterColumn heading={t('footer-products')} values={products} comingSoon />
-        <FooterColumn heading={t('footer-resources')} values={resources} />
+        <FooterColumn heading={t('footer-resources')} values={resources} isBlog />
       </Container>
       <div
         style={{

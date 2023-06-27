@@ -11,7 +11,7 @@ const Subscribe = () => {
   const { t } = useTranslation();
 
   return (
-    <SectionWrapper height={100}>
+    <SectionWrapper height={100} padding='44px'>
         <div
           style={{
             backgroundColor: '#FDF0EC',

@@ -7,9 +7,11 @@ import { blogData } from '../../assets/data/blogData';
 import { BlogsMultiple } from './Blog.styles';
 import Subscribe from '../../components/subscribe/Subscribe.component';
 import { useTranslation } from 'react-i18next';
+import { useNavigate } from 'react-router-dom';
 
 const Blog = () => {
   const { t } = useTranslation();
+  const navigate = useNavigate()
 
   return (
     <>
@@ -34,6 +36,7 @@ const Blog = () => {
                 coverHeight='62vh'
                 coverWidth='44vw'
                 style={{ marginRight: '10px' }}
+                onClick={() => navigate(`/blog/cultivation/${data.id}`)}
               />
             ))}
         </ServicesContainer>
@@ -57,6 +60,7 @@ const Blog = () => {
               coverWidth='29vw'
               style={{ marginRight: '10px' }}
               showCaption={false}
+              onClick={() => navigate(`/blog/cultivation/${data.id}`)}
             />
           ))}
         </BlogsMultiple>

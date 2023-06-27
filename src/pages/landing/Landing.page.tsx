@@ -624,7 +624,8 @@ const Landing = () => {
               />
             )}
             color='rgba(83, 23, 3, 1)'
-            headingLength='50%'         
+            headingLength='50%'
+            HtextAlign='center'         
           />
         </div>
       </SectionWrapper>

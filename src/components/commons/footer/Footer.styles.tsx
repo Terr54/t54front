@@ -3,13 +3,14 @@ import styled from '@emotion/styled';
 
 export interface footerColumnProps {
   values: Array<{
-    id: number;
+    id: number | any;
     label: string;
     to: string;
   }>;
   heading: string;
   comingSoon?: boolean;
   onClick?: () => void
+  isBlog?: boolean
 }
 
 export const Container = styled.div`

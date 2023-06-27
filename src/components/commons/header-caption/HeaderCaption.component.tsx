@@ -12,7 +12,7 @@ const HeaderCaption = ({
   color = '#fff',
   textAlign = 'center',
   MtextAlign = 'left',
-  HtextAlign = 'center',
+  HtextAlign = 'left',
   heading,
   height = '',
   caption,
