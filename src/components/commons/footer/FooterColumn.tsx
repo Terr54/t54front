@@ -31,6 +31,7 @@ const FooterColumn = ({
                 : navigate(item.to)
             }
             bgColor='transparent'
+            style={{ justifyContent: 'flex-start', paddingLeft: '0' }}
           />
         ) : (
           // <StyledFooterLink key={`${item.id}${item.label}`} href={item.to}>

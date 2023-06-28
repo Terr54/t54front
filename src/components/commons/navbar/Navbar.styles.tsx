@@ -65,6 +65,9 @@ export const LoggedHeader = styled.div`
   width: 100%;
   align-items: center;
   box-sizing: border-box;
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+  }
 `;
 export const LoggedItems = styled.div<navbarProps>`
   display: flex;

@@ -29,7 +29,7 @@ const Subscribe = () => {
             textAlign='left'
             alignItems='flex-start'
             renderIcon={() => (
-              <Input placeholder={t('your-email')} width="75%" containerStyle={{ paddingRight: '0px', border: 'none', backgroundColor: '#fff' }}>
+              <Input placeholder={t('your-email')} width="65%" containerStyle={{ paddingRight: '0px', border: 'none', backgroundColor: '#fff' }}>
                 <Button
                   text={t('subscribe-text')}
                   bgColor="rgba(230, 63, 7, 1)"
@@ -39,12 +39,12 @@ const Subscribe = () => {
               </Input>
             )}
             color="rgba(83, 23, 3, 1)"
-            headingLength='80%'
-            captionLength='80%'
+            headingLength='70%'
+            captionLength='70%'
           />
           <div style={{ display: 'flex' }}>
-            <img src={planeGreen} style={{ width: '18vw', height: '18vh' }} />
-            <img src={planeOrange} style={{ width: '22vw', height: '22vh', marginTop: '40px' }} />
+            <img src={planeGreen} style={{ width: '14vw', height: '18vh' }} alt='plane_pic' />
+            <img src={planeOrange} style={{ width: '18vw', height: '22vh', marginTop: '40px' }} alt='plane_pic' />
           </div>
         </div>
       </SectionWrapper>

@@ -14,7 +14,7 @@ const Blog = () => {
   const navigate = useNavigate()
 
   return (
-    <>
+    <div>
       <SectionWrapper height={100}>
         <BlogHeader />
         <HeaderCaption
@@ -66,7 +66,7 @@ const Blog = () => {
         </BlogsMultiple>
       </SectionWrapper>
       <Subscribe />
-    </>
+    </div>
   );
 };
 
