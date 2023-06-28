@@ -28,6 +28,7 @@ export const MerchantActions = styled.div`
   @media (max-width: 768px) {
     display: flex;
     flex-direction: column;
+    align-items: center;
   };
 `;
 export const Actions = styled.div`
@@ -36,6 +37,7 @@ export const Actions = styled.div`
    @media (max-width: 768px) {
     display: flex;
     flex-direction: column;
+    align-items: center;
   };
 `;
 export const ActionCount = styled.div`

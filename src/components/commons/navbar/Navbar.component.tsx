@@ -35,6 +35,7 @@ import flag from '../../../assets/pictures/NigerianFlag.svg';
 import { useDispatch, useSelector } from '../../../store';
 import DropDownProfile from '../avatar-wrapper/AvatarWrapper';
 import Button from '../controls/button/Button.component';
+import { cartItems } from '../../../assets/data/cartItems';
 
 const Navbar = ({
   showCartIcon = true,
@@ -259,25 +260,9 @@ const Navbar = ({
             ) : (
               <LoggedHeader>
                 <LoggedHeader>
-                  {showLogo && <Logo width={100} height={28} />}
-                  <Input
-                    label=''
-                    placeholder={`${t('search')} ${t('products')}`}
-                    width='96%'
-                    margin='0px 40px 0px 40px'
-                    containerStyle={{
-                      backgroundColor: '#F6F6F6',
-                      padding: '0px 10px',
-                    }}
-                    iconAfter
-                    renderIcon={() => (
-                      <SearchIcon
-                        color='disabled'
-                        fontSize='small'
-                        style={{ marginRight: '6px' }}
-                      />
-                    )}
-                  />
+                  <div className={classes.logoMobile}>
+                    {showLogo && <Logo width={100} height={28} />}
+                  </div>
                 </LoggedHeader>
                 <LoggedItems logoItemsWidth={logoItemsWidth}>
                   <div>
@@ -333,30 +318,16 @@ const Navbar = ({
           padding='22px'
         >
           <CartItems>
-            <CartItem
-              cover={cover}
-              heading='Dried Nigerian Ginger'
-              country='Nigeria'
-              countryFlag={flag}
-              processing='Dried'
-              type='Terre Basics'
-            />
-            <CartItem
-              cover={cover}
-              heading='Dried Nigerian Ginger'
-              country='Nigeria'
-              countryFlag={flag}
-              processing='Dried'
-              type='Terre Basics'
-            />
-            <CartItem
-              cover={cover}
-              heading='Dried Nigerian Ginger'
-              country='Nigeria'
-              countryFlag={flag}
-              processing='Dried'
-              type='Terre Basics'
-            />
+            {cartItems.map((item: any) => (
+              <CartItem
+                cover={item.cover}
+                heading={item.heading}
+                country={item.country}
+                countryFlag={item.flag}
+                processing={item.processing}
+                type={item.type}
+              />
+            ))}
           </CartItems>
           <Summaries>
             <Summary>

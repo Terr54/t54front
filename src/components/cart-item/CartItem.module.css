@@ -1,0 +1,10 @@
+.amount {
+  color: #666666;
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .amount {
+    margin-top: 15px;
+  }
+}

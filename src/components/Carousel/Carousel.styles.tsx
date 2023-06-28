@@ -14,6 +14,9 @@ export const Container = styled.div`
   width: 100%;
   justify-content: center;
   height: 100%;
+  @media screen and (max-width: 767px) {
+    height: auto;
+  }
 `;
 export const CarouselContainer = styled.div`
   overflow: hidden;

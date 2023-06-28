@@ -119,7 +119,7 @@ const CheckoutSummary = () => {
             <h3>ACCEPTED PAYMENT METHODS</h3>
             <div className={classes.paymentCards}>
               {paymentCards?.map((item: any) => (
-                <img key={item.id} src={item.src} className={classes.card} />
+                <img key={item.id} src={item.src} className={classes.card} alt='card_img' />
               ))}
             </div>
           </div>

@@ -74,6 +74,10 @@ export const LoggedItems = styled.div<navbarProps>`
   width: ${({ logoItemsWidth }) => logoItemsWidth ?? '26%'};
   align-items: center;
   justify-content: space-between;
+  @media screen and (max-width: 767px) {
+    width: 100%;
+    margin-top: 20px
+  }
 `;
 export const CartItems = styled.div`
   padding: 10px;
@@ -94,7 +98,7 @@ export const CartItems = styled.div`
 
 export const Summaries = styled.div`
   width: 100%;
-  margin-top: 5rem;
+  margin-top: 3rem;
   color: #000;
 `;
 export const Summary = styled.div`

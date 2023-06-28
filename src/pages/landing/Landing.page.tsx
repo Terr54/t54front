@@ -529,7 +529,7 @@ const Landing = () => {
           )}
         </ServicesContainer>
       </SectionWrapper>
-      <SectionWrapper height='50vh'>
+      <SectionWrapper Mheight='30vh' height='50vh'>
         <Carousel>
           {testimonials.map((item) => (
             <CarouselItem width={'100%'} key={item.text + item.username}>
@@ -542,6 +542,9 @@ const Landing = () => {
                   headingMargin='20px 0px 0px 0px'
                   captionSize='9px'
                   captionMargin='4px'
+                  MtextAlign='center'
+                  HtextAlign='center'
+                  textAlign='center'
                 />
               </Testimonial>
             </CarouselItem>
@@ -625,7 +628,8 @@ const Landing = () => {
             )}
             color='rgba(83, 23, 3, 1)'
             headingLength='50%'
-            HtextAlign='center'         
+            HtextAlign='center'
+            MtextAlign='center'         
           />
         </div>
       </SectionWrapper>
