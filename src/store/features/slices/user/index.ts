@@ -7,6 +7,7 @@ import {
 } from '../../../../pages/auth/api'
 import {
   clearLocalUser,
+  clearTokens,
   setExpiresInSeconds, setJWT, setLocalUser, setRefreshToken
 } from '../../../../storage/local.storage'
 import type {
@@ -117,6 +118,7 @@ const userSlice = createSlice({
     },
     logout: (state) => {
       clearLocalUser()
+      clearTokens()
       delete state.payload
     }
   },
