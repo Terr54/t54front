@@ -3,12 +3,25 @@
   border-radius: 8px;
   margin-bottom: 20px;
 }
+.children {
+  margin-top: 10px;
+}
 .heading {
   font-size: 13px;
   color: #666666;
 }
 .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  /* .container {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+  }
+  .children {
+    display: flex;
+    flex-direction: column;
+  } */
 }
