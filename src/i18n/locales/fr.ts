@@ -1,7 +1,7 @@
 const translation = {
-  welcome: 'Welcome to {{appName}}',
-  welcomeUser: 'Bienvenue ',
-  'sign-in': "S'identifier",
+  'welcomeUser': 'Bienvenue ',
+  'welcome': 'Bienvenue',
+  'sign-in': 'S\'identifier',
   'home-text': 'Accueil',
   'about-us': 'À propos de nous',
   'marketplace-text': 'Place de marché',
@@ -666,7 +666,21 @@ const translation = {
   'q39-t':
     'Des contrôles de qualité stricts sont effectués pour s’assurer que nos produits sont de la plus haute qualité et exempts de défauts. Toutefois, si vous avez reçu des produits défectueux veuillez contacter le service client à contact@Terre54.co',
   'q39-h1-t1':
-    'Si vous avez d’autres questions que nous n’avons pas n’hésitez pas à contacter notre équipe à contact@Terre54.co'
+    'Si vous avez d’autres questions que nous n’avons pas n’hésitez pas à contacter notre équipe à contact@Terre54.co',
+  'faq-h1': 'À propos de la Société',
+  'faq-t1': 'Terre54 la première plateforme de vente en ligne de produits africains en gros et demi-gros. Vous cherchez à vous approvisionner en produits tropicaux? Terre54 agit comme intermédiaire entre acheteurs professionnels en Europe et vendeurs de l’Afrique en s’assurant de la qualité, de la transparence et de l’équité tout au long du processus. ',
+  'subscription-aded': 'Abonnement ajouté avec succès',
+  'subscription-failed': 'Nous n\'avons pas pu ajouter votre abonnement, veuillez réessayer.',
+  'weekly-info': 'dose hebdomadaire d\'articles et de ressources',
+  'newsletter': 'bulletin d\'information',
+  'newsletter-subscriptions': 'Inscriptions à la newsletter',
+  'topic': 'Sujet',
+  'subject': 'Sujet',
+  'date': 'Date',
+  'contact-forms': 'Formulaires de contact',
+  'message': 'Message',
+  'form-submitted': 'Formulaire soumis',
+  'form-submit-failed': 'Échec de l\'envoi du formulaire',
   // not-translate
 };
 export default translation;

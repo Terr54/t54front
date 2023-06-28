@@ -1,5 +1,5 @@
 const translation = {
-  welcome: 'Welcome to {{appName}}',
+  welcome: 'Welcome',
   'welcomeUser': 'Welcome ',
   'sign-in': 'Sign in',
   'home-text': 'Home',
@@ -651,7 +651,21 @@ const translation = {
   'q39-t':
     'Des contrôles de qualité stricts sont effectués pour s’assurer que nos produits sont de la plus haute qualité et exempts de défauts. Toutefois, si vous avez reçu des produits défectueux veuillez contacter le service client à contact@Terre54.co',
   'q39-h1-t1':
-    'Si vous avez d’autres questions que nous n’avons pas n’hésitez pas à contacter notre équipe à contact@Terre54.co'
+    'Si vous avez d’autres questions que nous n’avons pas n’hésitez pas à contacter notre équipe à contact@Terre54.co',
+  'faq-h1': 'About the Company',
+  'faq-t1': 'Terre54 the first online sales platform for wholesale and semi-wholesale African products. Are you looking to stock up on tropical products? Terre54 acts as an intermediary between professional buyers in Europe and sellers in Africa, ensuring quality, transparency and fairness throughout the process.',
+  'subscription-aded': 'Subscription added successfully',
+  'subscription-failed': 'We could not add you subscription, please try again.',
+  'weekly-info': 'weekly dose of articles and resources',
+  'newsletter': 'Newsletter',
+  'newsletter-subscriptions': 'Newsletter Subscriptions',
+  'topic': 'Topic',
+  'date': 'Date',
+  'contact-forms': 'Contact Forms',
+  'message': 'Message',
+  'subject': 'Subject',
+  'form-submitted': 'Form Submitted',
+  'form-submit-failed': 'Failed to submit form',
   // not-translated
 };
 export default translation;

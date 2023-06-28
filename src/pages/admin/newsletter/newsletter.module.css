@@ -1,0 +1,24 @@
+.tableContainer {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 12px;
+  margin: 16px 0px;
+  height: 100%;
+  overflow: auto;
+}
+.table {
+  width: 100%;
+  margin: 15px 0px;
+}
+.tHead th {
+  padding: 5px 15px;
+  color: #666666;
+  font-size: 14px;
+  font-weight: normal;
+}
+.tableBody td {
+  padding: 16px 5px;
+  font-size: 14px;
+  border-bottom: 1px solid #f0f0f0;
+  text-align: center;
+}
