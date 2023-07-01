@@ -6,46 +6,44 @@ import {
   DropDownList,
   ListItem,
   Heading,
-  SelectProps
+  SelectProps,
+  OptionSelect
 } from './Select.styles';
-import { supportedLanguages } from '../../../i18n';
-import { getLanguage, setLanguage } from '../../../storage/local.storage';
 
-const LanguageSelect = ({
+const DropdownSelect = ({
   bgColor,
   width,
+  value,
+  placeholder,
   dropdownListStyle,
-  style,
+  values,
+  onOptionSelect,
   ...props
 }: SelectProps) => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
-  const lang = getLanguage() ?? 'en';
 
   const toggleDropdown = () => setIsOpen(!isOpen);
-  const onOptionClicked = (value: string) => {
+  const onOptionClicked = (option: OptionSelect) => {
     setIsOpen(false);
-    if (lang !== value) {
-      setLanguage(value);
-      window.location?.reload();
-    }
+    onOptionSelect?.(option);
   };
 
   return (
-    <Container style={{ ...(style ?? {}), marginLeft: 25 }} {...props}>
+    <Container {...props}>
       <DropDownHeader bgColor={bgColor} width={width} onClick={toggleDropdown}>
-        <Heading style={{ textTransform: 'uppercase' }}>{lang}</Heading>
+        <Heading style={{ textTransform: 'uppercase' }}>{value ?? placeholder}</Heading>
         <KeyboardArrowDownIcon style={{ fontSize: '15px' }} />
       </DropDownHeader>
       {isOpen && (
         <DropDownList style={dropdownListStyle}>
-          {supportedLanguages.map((option) => (
+          {values?.map((option) => (
             <ListItem
-              active={lang === option}
+              active={value === (option.value ?? option.option) }
               onClick={() => onOptionClicked(option)}
-              key={option}
+              key={option.value ?? option.option}
               style={{ textTransform: 'uppercase' }}
             >
-              {option}
+              {option.option}
             </ListItem>
           ))}
         </DropDownList>
@@ -54,4 +52,4 @@ const LanguageSelect = ({
   );
 };
 
-export default LanguageSelect;
+export default DropdownSelect;

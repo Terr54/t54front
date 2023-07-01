@@ -74,10 +74,10 @@ const ProductPreview = ({ payload }: ProductPreviewProp) => {
                   {stock?.currency} <Quantity>{stock?.unitPrice}</Quantity> / {stock?.unitMeasure}
               </Span>
               <SubInfo>
-                <Info>Minimum order quantity (MOQ): <span>N/A</span></Info>
+                {/* <Info>Minimum order quantity (MOQ): <span>N/A</span></Info>
                 <Info>Packaging: <span>N/A</span></Info>
                 <Info>Processing: <span>N/A</span></Info>
-                <Info>Incoterm: <span>N/A</span></Info>
+                <Info>Incoterm: <span>N/A</span></Info> */}
               </SubInfo>
             </>
               )

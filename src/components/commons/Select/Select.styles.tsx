@@ -1,34 +1,34 @@
 import { CSSProperties, ReactNode } from 'react';
 import styled from '@emotion/styled';
 
-export interface selectProps {
+export type OptionSelect = { option: string, value?: string };
+export interface SelectProps {
   text?: string;
   width?: string | number;
   bgColor?: string;
   isVisible?: boolean;
-  active?: boolean;
-  onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
+  value?: string;
+  onOptionSelect?: (option?: OptionSelect) => void;
   label?: string;
-  values?: string[];
+  values?: OptionSelect[];
   children?: ReactNode | ReactNode[];
   style?: CSSProperties;
   dropdownListStyle?: CSSProperties;
+  placeholder?: string;
 }
 
 export const Container = styled.div`
   position: relative;
-  margin-left: 25px;
   box-sizing: border-box;
 `;
 
-export const DropDownHeader = styled.div<selectProps>`
+export const DropDownHeader = styled.div<SelectProps>`
   background-color: ${({ bgColor }) => bgColor};
   font-size: 20px;
   padding: 12px;
   cursor: pointer;
   display: flex;
   align-items: center;
-  justify-content: space-between;
   box-sizing: border-box;
   color: black
 `;
@@ -44,7 +44,7 @@ export const DropDownList = styled.div`
   z-index: 10;
 `;
 
-export const ListItem = styled.div<selectProps>`
+export const ListItem = styled.div<{active?: boolean}>`
   color: ${({ active }) => (active ? '#888' : '#000')};
   font-size: 12px;
   margin: 5px 0px;
