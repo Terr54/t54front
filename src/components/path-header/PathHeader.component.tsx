@@ -2,7 +2,7 @@ import React from 'react';
 import styled from '@emotion/styled';
 
 const Container = styled.div`
-  margin: 44px 0px 0px 44px;
+  margin: 80px 0px 44px 44px;
   span {
     color: #666666;
   }

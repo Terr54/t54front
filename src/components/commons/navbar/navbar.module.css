@@ -59,4 +59,9 @@
     align-items: center;
     margin-top: 20px;
   }
+  .logoMobile {
+    display: flex;
+    align-self: flex-start;
+    margin: 20px 0;
+  }
 }

@@ -47,14 +47,15 @@ const AboutUs = () => {
             caption={t('about-us-text')}
             captionLength='55%'
             headingSize='28px'
+            textAlign='center'
           />
         </Hero>
       </SectionWrapper>
-      <SectionWrapper height='100vh' width='100%' padding='44px 250px' Mheight='100%' mPadding='25px'>
+      <SectionWrapper height='100vh' width='100%' padding='44px' Mheight='100%' mPadding='25px'>
         <TextImage heading={t('our-mission')} image={mission} description={t('mission-text')} flexDirection='row-reverse' />
         <TextImage heading={t('our-vision')} image={vision} description={t('vision-text')}/>
       </SectionWrapper>
-      <SectionWrapper height={100} marginTop='0px' width='100%'>
+      <SectionWrapper height={100} marginTop='0px' width='100%' padding='44px'>
         <HeaderCaption
           heading={t('terre-values')}
           caption={t('terre-values-text')}
@@ -64,6 +65,7 @@ const AboutUs = () => {
           captionLength='36%'
           headingSize='16px'
           headingLength='20%'
+          HtextAlign='left'
         />
         <ServicesContainer>
         <Background bgImage={sharing}>
@@ -78,6 +80,7 @@ const AboutUs = () => {
                   alignItems='flex-start'
                   color='#fff'
                   width='100%'
+                  HtextAlign='left'
                 >
                   <CheckCircle
                     style={{
@@ -101,6 +104,7 @@ const AboutUs = () => {
                   captionSize='17px'
                   alignItems='flex-start'
                   color='#fff'
+                  HtextAlign='left'
                 >
                   <CheckCircle
                     style={{
@@ -124,6 +128,7 @@ const AboutUs = () => {
                   captionSize='17px'
                   alignItems='flex-start'
                   color='#fff'
+                  HtextAlign='left'
                 >
                   <CheckCircle
                     style={{
@@ -139,7 +144,7 @@ const AboutUs = () => {
         </ServicesContainer>
       </SectionWrapper>
       <SectionWrapper
-        padding="0px 50px"
+        padding="44px"
         height={100}
       >
         <HeaderCaption
@@ -147,12 +152,12 @@ const AboutUs = () => {
           color="#000"
           textAlign="left"
           headingLength="100%"
+          HtextAlign='left'
         />
         <ServicesContainer>
           <ServiceCard
             bgColor="rgba(253, 240, 236, 1)"
             margin = '0px 8px 0px 0px'
-            height='25vh'
             heightMobile='30vh'
           >
             <HeaderCaption
@@ -163,6 +168,7 @@ const AboutUs = () => {
               headingSize="13px"
               headingLength="80%"
               alignItems="flex-start"
+              HtextAlign='left'
             />
             <Button
               text={ showMore ? t('show-less') : t('learn-more')}
@@ -177,7 +183,6 @@ const AboutUs = () => {
           </ServiceCard>
           <ServiceCard
             bgColor="rgba(246, 249, 237, 1)"
-            height='25vh'
             heightMobile='30vh' renderIcon={() => (
               <Button
                 text={showMore ? t('show-less') : t('learn-more')}
@@ -198,11 +203,11 @@ const AboutUs = () => {
               textAlign="left"
               headingSize="13px"
               alignItems="flex-start"
+              HtextAlign='left'
             />
           </ServiceCard>
           <ServiceCard
             bgColor="rgba(254, 251, 239, 1)"
-            height='25vh'
             heightMobile='30vh' renderIcon={() => (
               <Button
                 text={showMore ? t('show-less') : t('learn-more')}
@@ -223,11 +228,11 @@ const AboutUs = () => {
               textAlign="left"
               headingSize="13px"
               alignItems="flex-start"
+              HtextAlign='left'
             />
           </ServiceCard>
           <ServiceCard
             bgColor="rgba(236, 244, 255, 1)"
-            height='25vh'
             heightMobile='30vh' renderIcon={() => (
               <Button
                 text={showMore ? t('show-less') : t('learn-more')}
@@ -248,11 +253,12 @@ const AboutUs = () => {
               textAlign="left"
               headingSize="13px"
               alignItems="flex-start"
+              HtextAlign='left'
             />
           </ServiceCard>
         </ServicesContainer>
       </SectionWrapper>
-      <SectionWrapper height={100}>
+      <SectionWrapper height={100} padding='0px 44px 44px'>
         <div
           style={{
             backgroundColor: '#FDF0EC',
@@ -276,6 +282,7 @@ const AboutUs = () => {
             )}
             color='rgba(83, 23, 3, 1)'
             headingLength='60%'
+            HtextAlign='center'
           />
         </div>
       </SectionWrapper>

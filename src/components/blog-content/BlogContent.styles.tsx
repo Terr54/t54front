@@ -9,11 +9,14 @@ export interface blogContentProps {
   date?: string;
   coverImg?: string;
   contentText?: string;
-  children?: ReactNode | ReactNode[]
+  children?: ReactNode | ReactNode[];
 }
 
 export const Container = styled.div`
-padding-top: 2px;
+  padding-top: 2px;
+  @media screen and (max-width: 768px) {
+    padding-top: 0px;
+  }
 `;
 
 export const Image = styled.div`
@@ -31,6 +34,9 @@ export const BlogTextContent = styled.div`
   margin-top: 15px;
   display: grid;
   grid-template-columns: 1fr 0.3fr;
+  @media screen and (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
 `;
 export const ParagraphText = styled.div`
   width: 96%;
@@ -38,6 +44,6 @@ export const ParagraphText = styled.div`
   align-items: center;
   p {
     word-break: break-word;
-    text-align: justify
+    text-align: justify;
   }
 `;

@@ -30,7 +30,7 @@ const InfoBlock = ({
         {heading && <span className={classes.heading}>{heading}</span>}
         {renderIcon?.()}
       </div>
-      <div style={{ marginTop: '10px' }}>{children}</div>
+      <div className={classes.children}>{children}</div>
     </div>
   );
 };

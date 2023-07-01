@@ -13,7 +13,7 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 8px
+  padding: 8px;
 `;
 export const Image = styled.div`
   width: 20px;

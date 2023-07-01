@@ -5,7 +5,7 @@ const TextImage = ({ flexDirection, alignItems, heading, description, descriptio
   return (
     <Container flexDirection={flexDirection} alignItems={alignItems}>
       <Image margin={margin} borderRadius={borderRadius}>
-        <img src={image} />
+        <img src={image} alt='cover' />
       </Image>
       <Texts>
         <h1>{heading}</h1>

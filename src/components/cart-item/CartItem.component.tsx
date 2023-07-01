@@ -18,6 +18,7 @@ import {
   Counters
 } from './CartItem.styles'
 import DeleteIcon from '../../assets/svg-icon/DeleteIcon'
+import classes from './CartItem.module.css'
 
 const CartItem = ({
   heading,
@@ -68,6 +69,7 @@ const CartItem = ({
             <img
               src={countryFlag}
               style={{ width: '30px', height: '16px', margin: '0px 2px' }}
+              alt='country-flag'
             />
             {country}
           </Country>
@@ -91,7 +93,7 @@ const CartItem = ({
               </div>
               </div>
               <div style={{ display: 'flex', alignItems: 'center', width: '70%' }}>
-              <span style={{ color: '#666666', marginRight: '10px' }}>EUR</span>
+              <span className={classes.amount}>EUR</span>
               <Amount>12, 000</Amount>
               </div>
             </Counters>

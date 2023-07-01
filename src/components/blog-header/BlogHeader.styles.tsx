@@ -10,7 +10,10 @@ export const Container = styled.div`
     justify-content: space-between;
     align-items: center;
     box-sizing: border-box;
-    height: 3rem
+    /* height: 3rem; */
+    @media (max-width: 768px) {
+    margin-bottom: 22px;
+  };
 `
 export const LinkTab = styled.span<blogNavProps>`
   border-bottom: ${({ activeTab }) =>
@@ -20,5 +23,5 @@ export const LinkTab = styled.span<blogNavProps>`
   :nth-child(1) {
     margin-left: 60px;
   }
-  transition: 0.1s linear
+  transition: 0.1s linear;
 `;
