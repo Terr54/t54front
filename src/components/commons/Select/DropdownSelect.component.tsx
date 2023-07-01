@@ -18,6 +18,7 @@ const DropdownSelect = ({
   dropdownListStyle,
   values,
   onOptionSelect,
+  style,
   ...props
 }: SelectProps) => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -29,7 +30,7 @@ const DropdownSelect = ({
   };
 
   return (
-    <Container {...props}>
+    <Container style={{ ...(style ?? {}), width: '100%' }} {...props}>
       <DropDownHeader bgColor={bgColor} width={width} onClick={toggleDropdown}>
         <Heading style={{ textTransform: 'uppercase' }}>{value ?? placeholder}</Heading>
         <KeyboardArrowDownIcon style={{ fontSize: '15px' }} />

@@ -28,3 +28,7 @@ export const categoryFilter: Filter<Product, string> = {
     return category === 'product.all' || item.category?.toLowerCase() === category?.toLowerCase();
   }
 }
+
+export const paymentTerms = [
+  '10%90% on delivery', '50%50% on delivery', '100%'
+];

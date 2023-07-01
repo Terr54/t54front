@@ -52,8 +52,6 @@ export const ListItem = styled.div<{active?: boolean}>`
   padding: 10px;
   display: flex;
   align-items: center;
-  justify-content: center;
-  justify-self: center;
   cursor: pointer;
   :hover {
     transition: 0.2s ease-in;
