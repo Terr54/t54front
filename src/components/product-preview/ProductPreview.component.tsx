@@ -85,12 +85,12 @@ const ProductPreview = ({ payload }: ProductPreviewProp) => {
         }
         </div>
         <ActionButtons>
-          <Button text='Request a Sample' bgColor='#fff' border='1px solid #E63F07' color='#E63F07' width='100%' onClick={() => setRequestSample(true)} />
-          <Button text='Request a Quote' bgColor='#E63F07' width='100%' margin='0px 0px 0px 15px' onClick={() => setRequestQuote(true)} />
+          <Button text={t('request-sample')} bgColor='#fff' border='1px solid #E63F07' color='#E63F07' width='100%' onClick={() => setRequestSample(true)} />
+          <Button text={t('request-quote')} bgColor='#E63F07' width='100%' margin='0px 0px 0px 15px' onClick={() => setRequestQuote(true)} />
         </ActionButtons>
       </Details>
     </Container>
-    <RequestQuote showModal={requestQuote} onClose={() => setRequestQuote(false)} />
+    <RequestQuote stock={stock} product={product} showModal={requestQuote} onClose={() => setRequestQuote(false)} />
     <RequestSample productId={payload?.product?.id} showModal={requestSample} onClose={() => setRequestSample(false)} />
     </SectionWrapper>
   )

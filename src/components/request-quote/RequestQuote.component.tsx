@@ -1,33 +1,30 @@
-import React from 'react'
 import Button from '../commons/controls/button/Button.component'
 import Input from '../commons/input/Input.component'
 import TextArea from '../commons/input/TextArea'
 import ModalWrapper from '../modal-wrapper/ModalWrapper.component'
-import { Label, Quantities, StyledButton } from './RequestQuote.styles'
+import { Product, ProductStock } from '../../domain/domain'
+import { useTranslation } from 'react-i18next'
 
-interface requestSampleProps {
+interface RequestSampleProps {
   showModal?: boolean,
-  onClose?: () => void
+  onClose?: () => void,
+  product: Product,
+  stock: ProductStock,
 }
 
-const RequestQuote = ({ showModal, onClose }: requestSampleProps) => {
+const RequestQuote = ({ showModal, onClose, product, stock }: RequestSampleProps) => {
+  const { t } = useTranslation();
   return (
-    <ModalWrapper heading='Request Quote' showModal={showModal} onClose={onClose} height='86%'>
-        <Input label='Request Date' />
-        <Label> <span>Quantity</span></Label>
-        <Quantities>
-            <StyledButton text='500 g' bgColor='#F6F6F6' color='#000' />
-            <StyledButton text='500 g' bgColor='#F6F6F6' color='#000' />
-            <StyledButton text='500 g' bgColor='#F6F6F6' color='#000' />
-            <StyledButton text='500 g' bgColor='#F6F6F6' color='#000' />
-            <StyledButton text='500 g' bgColor='#F6F6F6' color='#000' />
-            <StyledButton text='500 g' bgColor='#F6F6F6' color='#000' />
-            <StyledButton text='500 g' bgColor='#F6F6F6' color='#000' />
-        </Quantities>
-        <Input placeholder='placeholder' />
-        <Input label='Payment Term' placeholder='Select your preferred option' />
-        <TextArea label='Other information' placeholder='Specify your needs, packaging requirements, etc' width='95%' />
-        <Button text='Request Quote' bgColor='#E63F07' width='100%' />
+    <ModalWrapper heading={`${t('request-quote')} (${product?.name ?? ''})`} showModal={showModal} onClose={onClose} height='86%' width='60vw'>
+          <div style={{ display: 'flex', width: '100%', alignItems: 'flex-end'}}>
+            <div style={{ width: '60%' }}>
+              <Input type='number' label={t('quantity')} />
+            </div>
+            <span style={{ padding: 15, fontSize: 16 }}>{stock?.unitMeasure}</span>
+          </div>
+        <Input label={t('payment-term')} placeholder={t('select-preferred-option')} />
+        <TextArea label={t('other-info')} placeholder={t('specify-needs-packaging')} width='100%' />
+        <Button text={t('request-quote')} bgColor='#E63F07' width='100%' />
     </ModalWrapper>
   )
 }

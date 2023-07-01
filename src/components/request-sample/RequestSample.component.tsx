@@ -40,7 +40,7 @@ const RequestSample = ({ showModal, onClose, productId }: requestSampleProps) =>
           )
         : (
         <ModalWrapper
-          heading='Request Sample'
+          heading={t('request-sample')}
           showModal={showModal}
           onClose={onClose}
           height="auto"

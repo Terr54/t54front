@@ -494,7 +494,7 @@ const translation = {
   'pending-product-verification': 'Pending product verification',
   'delivery-address': 'Delivery address',
   'return-email': 'Return Email',
-  'request-sample': 'Request Sample',
+  'request-sample': 'Request a Sample',
   'invalid-password': 'Your password is too weak, minimum 8 characters, try adding numbers and special characters',
   'respect-cookie': 'We respect your privacy',
   'by-signing-agree': 'By signing up, you agree to our',
@@ -666,6 +666,11 @@ const translation = {
   'subject': 'Subject',
   'form-submitted': 'Form Submitted',
   'form-submit-failed': 'Failed to submit form',
+  'payment-term': 'Payment Term',
+  'request-quote': 'Request a Quote',
+  'select-preferred-option': 'Select your preferred option',
+  'other-info': 'Other information',
+  'specify-needs-packaging': 'Specify your needs, packaging requirements, etc',
   // not-translated
 };
 export default translation;

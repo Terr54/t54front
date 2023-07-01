@@ -681,6 +681,11 @@ const translation = {
   'message': 'Message',
   'form-submitted': 'Formulaire soumis',
   'form-submit-failed': 'Échec de l\'envoi du formulaire',
+  'payment-term': 'Délai de paiement',
+  'request-quote': 'Demande de devis',
+  'select-preferred-option': 'Sélectionnez votre option préférée',
+  'other-info': 'Autres informations',
+  'specify-needs-packaging': 'Spécifiez vos besoins, vos exigences en matière d\'emballage, etc',
   // not-translate
 };
 export default translation;

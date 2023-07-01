@@ -45,6 +45,7 @@ export const Content = styled.div<modalWrapperProps>`
   display: flex;
   flex-direction: column;
   align-items: center;
+  min-width: 300px;
   @media (max-width: 768px) {
     width: 80vw;
   };
