@@ -1,21 +1,22 @@
 .container {
-    display: flex;
-    align-items: center;
-    padding: 14px 20px;
-    cursor: pointer;
-    color: #210F04;
+  display: flex;
+  align-items: center;
+  padding: 14px 20px;
+  cursor: pointer;
+  color: #210f04;
 }
 .activeContainer {
-    background-color: #FDF0EC;
-    color: #E63F07;
+  background-color: #fdf0ec;
+  color: #e63f07;
 }
 .container:hover {
-    opacity: 0.8;
+  opacity: 0.8;
+  color: #F52F2F;
+  transition: 0.3s linear;
 }
 
 @media (max-width: 900px) {
-    .text {
-        display: none;
-    }
+  .text {
+    display: none;
+  }
 }
-

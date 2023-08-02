@@ -20,17 +20,19 @@ const Input = ({
   placeholder,
   errorMessage,
   width = '100%',
-  margin = '5px 0',
+  margin = '5px 0 10px',
   label,
   type,
   value,
   children,
   iconAfter,
   pointerEvents,
+  subLabel,
   ...props
 }: InputPropTypes) => (
   <Container margin={margin}>
-    {label && <Label> <span>{ label }</span></Label>}
+    {label && <Label>{ label }</Label>}
+    {subLabel && <Label>{ subLabel }</Label>}
     <StyledInputContainer
       width={width}
       className={className}

@@ -65,12 +65,12 @@ const MarketPage = () => {
     } else {
       effectRef.current = false;
     }
-  }, []);
+  }, [dispatch, page]);
 
   return (
     <Container>
       <MarketplaceNav margin='0' />
-      <SectionWrapper height="" bgColor="#F6F9ED">
+      <SectionWrapper height="70vh" bgColor="#F6F9ED">
         <Carousel>
           {marketplaceItems.map((item) => (
             <CarouselItem

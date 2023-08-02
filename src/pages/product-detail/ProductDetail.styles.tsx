@@ -53,8 +53,8 @@ export const Label = styled.span`
 export const Companies = styled.div`
   align-items: center;
   justify-content: space-between;
-  display: 'flex',
-  flexWrap: 'wrap',
+  display: flex;
+  flex-wrap: 'wrap';
   margin: 6px 0px;
   p {
     margin: 0px;
@@ -96,6 +96,8 @@ export const CompanyCost = styled.div`
   display: flex;
   justify-content: center;
   margin-top: 10px;
+  align-items: center;
+  min-width: 10%;
   h2 {
     margin: 0px;
   }

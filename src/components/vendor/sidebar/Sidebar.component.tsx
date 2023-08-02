@@ -21,7 +21,7 @@ interface SidebarProps {
 }
 
 const Sidebar = ({ width, sidebarItems }: SidebarProps) => {
-  const user = useSelector(state => state.user.payload);
+  const user = useSelector((state) => state.user.payload);
   const [active, setActive] = useState<string>('');
   const navigate = useNavigate();
   const location = useLocation();
@@ -31,12 +31,8 @@ const Sidebar = ({ width, sidebarItems }: SidebarProps) => {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    console.log(location.pathname)
-    if (effectRef.current) {
-      effectRef.current = false;
-      setActive(location.pathname);
-    }
-  }, [location.pathname])
+    setActive(location.pathname);
+  }, [location.pathname]);
 
   const handleLogout = () => {
     dispatch(logout());
@@ -53,92 +49,94 @@ const Sidebar = ({ width, sidebarItems }: SidebarProps) => {
         </div>
       </Link>
       <div style={{ marginTop: '30px' }}>
-      {
-          user && sidebarItems ? (
-            <>
-              {
-                sidebarItems
-                .filter(s => s.roles?.some(r => r?.toLocaleUpperCase() === user.role?.name?.toLocaleUpperCase()))
-                .map(item => {
-                  return (
-                    <SidebarItem
-                      active={item.title === active}
-                      key={item.id}
-                      text={t(item.title)}
-                      renderIcon={() => <item.icon />}
-                      onClick={() => {
-                        setActive(item.title);
-                        if (item.to) navigate(item?.to);
-                      }}
-                    />
-                  )
-                })
-              }
-            </>
-          ) : null
-        }
+        {user && sidebarItems ? (
+          <>
+            {sidebarItems
+              .filter((s) =>
+                s.roles?.some(
+                  (r) =>
+                    r?.toLocaleUpperCase() ===
+                    user.role?.name?.toLocaleUpperCase()
+                )
+              )
+              .map((item) => {
+                return (
+                  <SidebarItem
+                    active={item.to === active}
+                    key={item.id}
+                    text={t(item.title)}
+                    renderIcon={() => <item.icon />}
+                    onClick={() => {
+                      // setActive(item.title);
+                      if (item.to) navigate(item?.to);
+                    }}
+                  />
+                );
+              })}
+          </>
+        ) : null}
       </div>
       <div className={classes.bottomSection}>
         <div
           className={classes.avatar}
           onClick={() => navigate(path.MYACCOUNT)}
         >
-          <Avatar size="22px" style={{ marginRight: '12px' }} />
+          <Avatar size='22px' style={{ marginRight: '12px' }} />
           <span className={classes.text}>My Account</span>
         </div>
         <div className={classes.text}>
           <Button
-            text="Contact"
-            color="#000000"
+            text='Contact'
+            color='#000000'
             renderIcon={() => (
               <LocalPhoneIcon
-                fontSize="small"
+                fontSize='small'
                 style={{ color: '#000000', marginRight: '10px' }}
               />
             )}
-            bgColor="transparent"
+            bgColor='transparent'
             style={{ justifyContent: 'flex-start', paddingLeft: '0' }}
             onClick={() => navigate(path.CONTACT)}
           />
         </div>
         <Button
-          className="text"
-          text="Help"
-          color="#000000"
+          className='text'
+          text='Help'
+          color='#000000'
           renderIcon={() => (
             <HelpOutlineIcon
-              fontSize="small"
+              fontSize='small'
               style={{ color: '#000000', marginRight: '10px' }}
             />
           )}
-          bgColor="transparent"
+          bgColor='transparent'
           style={{ justifyContent: 'flex-start', paddingLeft: '0' }}
         />
         <Button
-          className="text"
-          text="Back To Home"
-          color="#000000"
+          className='text'
+          text='Home'
+          color='#000000'
           renderIcon={() => (
             <ArrowBackIcon
-              fontSize="small"
+              fontSize='small'
               style={{ color: '#000000', marginRight: '10px' }}
             />
           )}
-          bgColor="transparent"
+          bgColor='transparent'
           style={{ justifyContent: 'flex-start', paddingLeft: '0' }}
           onClick={() => navigate(path.LANDING)}
         />
         <Button
-          text="Logout"
+          text='Logout'
           onClick={handleLogout}
-          color="#F52F2F"
+          color='#F52F2F'
           renderIcon={() => (
             <LogoutOutlinedIcon
-              fontSize="small"
+              fontSize='small'
               style={{ color: '#F52F2F', marginRight: '10px' }}
             />
           )}
-          bgColor="transparent"
+          bgColor='transparent'
           style={{ justifyContent: 'flex-start', paddingLeft: '0' }}
         />
       </div>

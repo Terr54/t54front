@@ -44,7 +44,7 @@ const Table = ({ heading = [], data, path }: tableProps) => {
           </thead>
           <tbody className={classes.tableBody}>
             {data.map((data: any) => (
-              <tr key={data.id} onClick={() => navigate(`/${path}/${data.id}`)}>
+              <tr key={data.id} onClick={() => navigate(`/${path}/${data.id}`)} className={classes.tableRow}>
                 <td className={classes.action}>
                   <div className={classes.actionContent}>
                     <CheckBoxOutlineBlankIcon className={classes.actionIcon} />

@@ -16,7 +16,7 @@ const InfoBlock = ({
   heading = '',
   children,
   bgColor = '#fff',
-  width,
+  width ='auto',
   height,
   renderIcon,
   style

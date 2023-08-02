@@ -51,8 +51,8 @@ const ContactForm = () => {
           onChange={e => { setEmail(e?.target?.value); setEmailValid(e?.target?.validity?.valid)}}
         />
         <Input
-          placeholder={t('service-confirmation')}
-          label={t('service-confirmation')}
+          placeholder={t('subject')}
+          label={t('Subject')}
           margin='5px 0px'
           value={subject}
           onChange={e => { setSubject(e?.target?.value)}}

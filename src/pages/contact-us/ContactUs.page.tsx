@@ -4,6 +4,7 @@ import Button from '../../components/commons/controls/button/Button.component'
 import HeaderCaption from '../../components/commons/header-caption/HeaderCaption.component'
 import Contact from '../../components/contact/Contact.component'
 import SectionWrapper from '../../containers/SectionWrapper/SectionWrapper.container'
+import Subscribe from '../../components/subscribe/Subscribe.component';
 
 const ContactUs = () => {
   const { t } = useTranslation()
@@ -12,7 +13,7 @@ const ContactUs = () => {
       <SectionWrapper padding='0px' height={40}>
         <Contact />
       </SectionWrapper>
-        <SectionWrapper height={80}>
+        <SectionWrapper height={80} padding='44px'>
           <div
             style={{
               backgroundColor: '#FDF0EC',
@@ -39,6 +40,7 @@ const ContactUs = () => {
             />
           </div>
         </SectionWrapper>
+        <Subscribe />
     </div>
   )
 }

@@ -37,7 +37,7 @@ const Products = () => {
       dispatch(loadSupplierProductsAction());
     }
     effectRef.current = true;
-  }, []);
+  }, [dispatch]);
 
   useEffect(() => {
     if (productList?.products) {
@@ -47,7 +47,7 @@ const Products = () => {
       })
       setFilteredProducts(f);
     }
-  }, [productList]);
+  }, [filters, productList]);
 
   return (
     <Wrapper heading={t('products')} renderButton={() => (

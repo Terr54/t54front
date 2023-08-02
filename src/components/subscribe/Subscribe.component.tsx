@@ -8,6 +8,7 @@ import HeaderCaption from '../commons/header-caption/HeaderCaption.component'
 import { useTranslation } from 'react-i18next'
 import { subscribeToNewsLetter } from '../../api/newsletter'
 import { toast } from 'react-hot-toast'
+import classes from './subscribe.module.css'
 
 const Subscribe = () => {
   const { t } = useTranslation();
@@ -50,7 +51,7 @@ const Subscribe = () => {
                   bgColor="rgba(230, 63, 7, 1)"
                   width={45}
                   style={{ borderTopLeftRadius: '0px', borderBottomLeftRadius: '0px' }}
-                  disabled={isEmailValid != undefined && !isEmailValid}
+                  disabled={isEmailValid !== undefined && !isEmailValid}
                   onClick={subscribe}
                 />
               </Input>
@@ -60,8 +61,8 @@ const Subscribe = () => {
             captionLength='70%'
           />
           <div style={{ display: 'flex' }}>
-            <img src={planeGreen} style={{ width: '14vw', height: '18vh' }} alt='plane_pic' />
-            <img src={planeOrange} style={{ width: '18vw', height: '22vh', marginTop: '40px' }} alt='plane_pic' />
+            <img src={planeGreen} className={classes.planeGreen} alt='plane_green' />
+            <img src={planeOrange} className={classes.planeOrange} alt='plane_orange' />
           </div>
         </div>
       </SectionWrapper>

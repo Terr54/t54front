@@ -22,6 +22,7 @@ import { path } from '../../routes/paths';
 import { useNavigate } from 'react-router-dom';
 import vision from '../../assets/pictures/vision.jpg';
 import about from '../../assets/pictures/seed.jpg';
+import Subscribe from '../../components/subscribe/Subscribe.component';
 
 const AboutUs = () => {
   const { t } = useTranslation();
@@ -39,7 +40,7 @@ const AboutUs = () => {
   showMore ? cardHeightMobile = '80vh' : cardHeightMobile = '50vh';
   return (
     <Container>
-      <SectionWrapper height='60vh' padding='' Mheight= '50vh'>
+      <SectionWrapper height='80vh' padding='' Mheight= '50vh'>
         <Hero bgImage={about}>
           <HeaderCaption
             HtextAlign='center'
@@ -258,7 +259,7 @@ const AboutUs = () => {
           </ServiceCard>
         </ServicesContainer>
       </SectionWrapper>
-      <SectionWrapper height={100} padding='0px 44px 44px'>
+      <SectionWrapper height={100} padding='0px 44px 0px'>
         <div
           style={{
             backgroundColor: '#FDF0EC',
@@ -286,6 +287,7 @@ const AboutUs = () => {
           />
         </div>
       </SectionWrapper>
+      <Subscribe />
       {/* <HeaderCaption
         heading={t('team')}
         color='rgba(83, 23, 3, 1)'
