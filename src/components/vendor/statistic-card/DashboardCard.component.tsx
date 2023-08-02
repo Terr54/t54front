@@ -25,7 +25,7 @@ const DashboardCard = ({
         <span className={classes.text}>{text}</span>
         {renderIcon?.()}
       </div>
-      <h2>{amount}</h2>
+      <h2 style={{ margin: '0 0 15px' }}>{amount}</h2>
       <div className={classes.trending}>
         {trending
           ? (

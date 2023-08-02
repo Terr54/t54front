@@ -22,9 +22,10 @@ export interface InputPropTypes extends InputHTMLAttributes<HTMLInputElement> {
   renderIcon?: () => ReactNode;
   renderIconLeft?: () => ReactNode;
   children?: ReactNode | ReactNode[];
-  iconAfter?: boolean,
-  value?: string | number
-  pointerEvents?: string
+  iconAfter?: boolean;
+  value?: string | number;
+  pointerEvents?: string;
+  subLabel?: string;
 }
 
 export interface textAreaProps extends InputHTMLAttributes<HTMLInputElement> {
@@ -65,7 +66,6 @@ export const StyledInputContainer = styled.div<InputPropTypes>`
   vertical-align: top;
   pointer-events: auto;
   position: relative;
-  margin: 5px 0px;
   :focus-within {
     border-color: ${({ hasError }) =>
       hasError ? 'var(--color-danger-tint)' : 'rgba(134, 184, 23, 1)'};
@@ -76,7 +76,8 @@ export const StyledInput = styled.input<InputPropTypes>`
   background-color: transparent;
   border: 0;
   box-sizing: border-box;
-  color: ${({ pointerEvents }) => pointerEvents === 'none' ? 'rgba(188, 176, 173, 1)' : 'inherit'} ;
+  color: ${({ pointerEvents }) =>
+    pointerEvents === 'none' ? 'rgba(188, 176, 173, 1)' : 'inherit'};
   cursor: inherit;
   font-size: 14px;
   padding: 8px;
@@ -103,45 +104,42 @@ export const TextAreaContainer = styled.div<textAreaProps>`
   width: 100%;
   margin-bottom: 30px;
   border-color: ${({ hasError }) =>
-  hasError ? 'var(--color-danger-tint)' : 'rgba(134, 184, 23, 1)'};
-  color: ${({ hasError }) =>
-    hasError ? 'var(--color-danger-tint)' : 'black'};
+    hasError ? 'var(--color-danger-tint)' : 'rgba(134, 184, 23, 1)'};
+  color: ${({ hasError }) => (hasError ? 'var(--color-danger-tint)' : 'black')};
   position: relative;
   display: flex;
   justify-content: center;
 `;
 
 export const TextAreaInput = styled.textarea<textAreaProps>`
-    width: ${({ width }) =>
-    typeof width === 'string' ? width : '98%'};
-    height: ${({ height }) =>
+  width: ${({ width }) => (typeof width === 'string' ? width : '98%')};
+  height: ${({ height }) =>
     typeof height === 'string' ? height : `${height}%`};
-      padding: ${({ padding }) =>
+  padding: ${({ padding }) =>
     typeof padding === 'string' ? padding : `${padding}%`};
-    border: 1px solid rgb(223, 225, 230);
-    margin-top: 4px;
-    border-radius: 6px;
-    ::placeholder {
-      color: rgba(188, 176, 173, 1);
-      font-size: 10px;
-    }
-    :focus {
-      border-color: ${({ hasError }) =>
+  border: 1px solid rgb(223, 225, 230);
+  margin-top: 4px;
+  border-radius: 6px;
+  ::placeholder {
+    color: rgba(188, 176, 173, 1);
+    font-size: 10px;
+  }
+  :focus {
+    border-color: ${({ hasError }) =>
       hasError ? 'var(--color-danger-tint)' : 'rgba(134, 184, 23, 1)'};
-      outline: none;
-    }
-`
+    outline: none;
+  }
+`;
 
 export const Label = styled.div`
   width: 100%;
-  span {
-    font-size: 12px;
-    padding: 5px 0;
-    text-align: left
-  }
-`
+  font-size: 13px;
+  padding: 5px 0;
+  text-align: left;
+`;
 
 export const Container = styled.div<InputPropTypes>`
-width: 100%;
-margin: ${({ margin }) => (typeof margin === 'string' ? margin : `${margin}%`)};
-`
+  width: 100%;
+  margin: ${({ margin }) =>
+    typeof margin === 'string' ? margin : `${margin}%`};
+`;

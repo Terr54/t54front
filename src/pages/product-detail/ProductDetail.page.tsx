@@ -47,6 +47,7 @@ import NoDetail from '../../components/no-detail/NoDetail.component';
 import { ProductResponse } from '../../domain/domain';
 import { findProductById } from '../../api/common';
 import { useTranslation } from 'react-i18next';
+import NoItem from '../../components/no-detail/NoItem.component';
 
 const ProductDetail = () => {
   const navigate = useNavigate();
@@ -231,7 +232,8 @@ const ProductDetail = () => {
           )}
           {activeIndex === 3 && (
             <Main>
-              <Content contentPadding='14px 14px 60px'>
+              <NoItem infoText='Coming Soon😃🙌' height='50vh' text='See more products' />
+              {/* <Content contentPadding='14px 14px 60px'>
                 <ReviewHeading>
                   <RateHeading>
                     <StyledLabel>Overall rating: </StyledLabel>
@@ -259,7 +261,7 @@ const ProductDetail = () => {
                     dislikes='10'
                   />
                 </Reviews>
-              </Content>
+              </Content> */}
             </Main>
           )}
           <div style={{ margin: '20px 0px' }}>

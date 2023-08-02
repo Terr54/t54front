@@ -1,9 +1,10 @@
 import { useTranslation } from 'react-i18next';
+import '../terms-of-service/terms-of-service.css'
 
 export const PrivacyPolicy = () => {
   const { t } = useTranslation();
   return (
-    <div style={{ margin: 25 }}>
+    <div style={{ margin: 25, paddingTop: 15 }}>
       <h1>{t('policy-title')}</h1>
       <h3>{t('of-site')}:</h3>
       <h3>{t('terre-name')}</h3>
@@ -238,49 +239,64 @@ export const PrivacyPolicy = () => {
         <p>{t('policy-article-6-s1-p3')}</p>
         <p>{t('policy-article-6-s1-p4')}</p>
         <ul>
-          <li><strong>Chrome : </strong><a
-            href='https://support.google.com/accounts/answer/61416?hl=fr'
-            target='__blank'
-            style={{ color: 'blue' }}
-          >
-            {t('policy-article-6-chrome')}
-          </a></li>
+          <li>
+            <strong>Chrome : </strong>
+            <a
+              href='https://support.google.com/accounts/answer/61416?hl=fr'
+              target='__blank'
+              style={{ color: 'blue' }}
+            >
+              {t('policy-article-6-chrome')}
+            </a>
+          </li>
         </ul>
         <ul>
-          <li><strong>Firefox : </strong><a
-            href='https://support.mozilla.org/fr/kb/protection-renforcee-contre-pistage-firefox-ordinateur?redirectslug=autoriser-bloquer-cookies-preferences-sites&redirectlocale=fr'
-            target='__blank'
-            style={{ color: 'blue' }}
-          >
-            {t('policy-article-6-firefox')}
-          </a></li>
+          <li>
+            <strong>Firefox : </strong>
+            <a
+              href='https://support.mozilla.org/fr/kb/protection-renforcee-contre-pistage-firefox-ordinateur?redirectslug=autoriser-bloquer-cookies-preferences-sites&redirectlocale=fr'
+              target='__blank'
+              style={{ color: 'blue' }}
+            >
+              {t('policy-article-6-firefox')}
+            </a>
+          </li>
         </ul>
         <ul>
-          <li><strong>Safari : </strong><a
-            href='https://www.apple.com/legal/privacy/fr-ww/'
-            target='__blank'
-            style={{ color: 'blue' }}
-          >
-            {t('policy-article-6-safari')}
-          </a></li>
+          <li>
+            <strong>Safari : </strong>
+            <a
+              href='https://www.apple.com/legal/privacy/fr-ww/'
+              target='__blank'
+              style={{ color: 'blue' }}
+            >
+              {t('policy-article-6-safari')}
+            </a>
+          </li>
         </ul>
         <ul>
-          <li><strong>Explorer : </strong><a
-            href='https://support.microsoft.com/fr-fr/windows/supprimer-et-g%C3%A9rer-les-cookies-168dab11-0753-043d-7c16-ede5947fc64d'
-            target='__blank'
-            style={{ color: 'blue' }}
-          >
-            {t('policy-article-6-explorer')}
-          </a></li>
+          <li>
+            <strong>Explorer : </strong>
+            <a
+              href='https://support.microsoft.com/fr-fr/windows/supprimer-et-g%C3%A9rer-les-cookies-168dab11-0753-043d-7c16-ede5947fc64d'
+              target='__blank'
+              style={{ color: 'blue' }}
+            >
+              {t('policy-article-6-explorer')}
+            </a>
+          </li>
         </ul>
         <ul>
-          <li><strong>Opera : </strong><a
-            href='http://www.opera.com/help/tutorials/security/cookies/'
-            target='__blank'
-            style={{ color: 'blue' }}
-          >
-            {t('policy-article-6-opera')}
-          </a></li>
+          <li>
+            <strong>Opera : </strong>
+            <a
+              href='http://www.opera.com/help/tutorials/security/cookies/'
+              target='__blank'
+              style={{ color: 'blue' }}
+            >
+              {t('policy-article-6-opera')}
+            </a>
+          </li>
         </ul>
         <ul>
           <li>{t('policy-article-6-l2')}</li>
@@ -300,18 +316,23 @@ export const PrivacyPolicy = () => {
       <p>{t('policy-article-6-s2-p6')}</p>
       <p>{t('policy-article-6-s2-p7')}</p>
       <section>
-      <h3>{t('policy-article-7')}</h3>
-      <p>{t('policy-article-7-p1')}</p>
-      <p><a href='https://www.terre54.co' target='__blank'>Terre54.co</a> {t('policy-article-7-p2')}</p>
-      <p>{t('policy-article-7-p3')}</p>
-      <p>{t('policy-article-7-p4')}</p>
-      <p>{t('policy-article-7-p5')}</p>
-      <p>{t('policy-article-7-p6')}</p>
-      <p>{t('policy-article-7-p7')}</p>
+        <h3>{t('policy-article-7')}</h3>
+        <p>{t('policy-article-7-p1')}</p>
+        <p>
+          <a href='https://www.terre54.co' target='__blank'>
+            Terre54.co
+          </a>{' '}
+          {t('policy-article-7-p2')}
+        </p>
+        <p>{t('policy-article-7-p3')}</p>
+        <p>{t('policy-article-7-p4')}</p>
+        <p>{t('policy-article-7-p5')}</p>
+        <p>{t('policy-article-7-p6')}</p>
+        <p>{t('policy-article-7-p7')}</p>
       </section>
       <section>
-      <h3>{t('policy-article-8')}</h3>
-      <p>{t('policy-article-8-p1')}</p>
+        <h3>{t('policy-article-8')}</h3>
+        <p>{t('policy-article-8-p1')}</p>
       </section>
     </div>
   );

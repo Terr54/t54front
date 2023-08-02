@@ -1,5 +1,13 @@
 import React from 'react';
-import { Container, Content, Header, Heading, modalWrapperProps, StyledClose } from './ModalWrapper.styles';
+import {
+  ChildrenContainer,
+  Container,
+  Content,
+  Header,
+  Heading,
+  modalWrapperProps,
+  StyledClose,
+} from './ModalWrapper.styles';
 
 const ModalWrapper = ({
   children,
@@ -15,12 +23,11 @@ const ModalWrapper = ({
   headerMargin = '0px 0px 12px',
   showHeader = true,
   showClose = true,
-  style
+  style,
 }: modalWrapperProps) => {
   return (
     <>
-    {
-      showModal && (
+      {showModal && (
         <Container onClick={onClick} style={style}>
           <Content
             height={height}
@@ -29,21 +36,15 @@ const ModalWrapper = ({
             padding={padding}
             margin={margin}
           >
-        <Header headerMargin={headerMargin}>
-          {showHeader && (
-            <Heading>{heading}</Heading>
-          )}
-          {
-            showClose && <StyledClose onClick={onClose} />
-          }
-        </Header>
-        {children}
-      </Content>
-    </Container>
-      )
-    }
+            <Header headerMargin={headerMargin}>
+              {showHeader && <Heading>{heading}</Heading>}
+              {showClose && <StyledClose onClick={onClose} />}
+            </Header>
+            <ChildrenContainer>{children}</ChildrenContainer>
+          </Content>
+        </Container>
+      )}
     </>
-
   );
 };
 

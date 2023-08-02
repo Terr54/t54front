@@ -75,3 +75,4 @@ export const StyledClose = styled(CloseIcon)`
     opacity: 0.8;
   }
 `;
+export const ChildrenContainer = styled.div``

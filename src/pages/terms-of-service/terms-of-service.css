@@ -1,0 +1,7 @@
+.contentWrapper {
+  margin: 15px;
+}
+p, li {
+  line-height: 1.9;
+  text-align: justify;
+}

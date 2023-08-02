@@ -40,6 +40,7 @@ import {
 import { PagedProductListResponse } from '../../domain/domain';
 import countries, { CountryCode } from '../../utils/contrycodes';
 import NoItem from '../../components/no-detail/NoItem.component';
+import Subscribe from '../../components/subscribe/Subscribe.component';
 // import ResponsiveDrawer from './Drawer.page.jsx';
 const Landing = () => {
   const { t } = useTranslation();
@@ -75,7 +76,7 @@ const Landing = () => {
       });
     }
     effectRef.current = false;
-  }, []);
+  }, [producPagSize, productPage]);
   return (
     <Container>
       <SectionWrapper padding='0px' height='80vh' Mheight='90vh'>
@@ -539,7 +540,7 @@ const Landing = () => {
                   caption={item.userTitle}
                   color='#000'
                   headingSize='6px'
-                  headingMargin='20px 0px 0px 0px'
+                  headingMargin='20px 0px 0px'
                   captionSize='9px'
                   captionMargin='4px'
                   MtextAlign='center'
@@ -604,7 +605,7 @@ const Landing = () => {
       <SectionWrapper padding='0px' height={40}>
         <Contact />
       </SectionWrapper>
-      <SectionWrapper height={100} padding='44px'>
+      <SectionWrapper height={100} padding='44px 44px 0'>
         <div
           style={{
             backgroundColor: '#FDF0EC',
@@ -633,6 +634,7 @@ const Landing = () => {
           />
         </div>
       </SectionWrapper>
+      <Subscribe />
     </Container>
   );
 };

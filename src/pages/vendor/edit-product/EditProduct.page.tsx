@@ -8,14 +8,23 @@ import FileUpload from '../../../components/vendor/file-upload/FileUpload.compon
 import InfoBlock from '../info-block/InfoBlock.component';
 import classes from './EditProduct.module.css';
 import { useParams } from 'react-router-dom';
+import { getById, publishProductInventory } from '../../../api/product';
 import {
-  getById,
-  publishProductInventory
-} from '../../../api/product';
-import { ProductDetails, ProductResponse, ProductStock } from '../../../domain/domain';
+  ProductDetails,
+  ProductResponse,
+  ProductStock,
+} from '../../../domain/domain';
 import { toast } from 'react-hot-toast';
 import { useDispatch, useSelector } from '../../../store';
-import { addProductDetailsAction, addProductInventoryAction, addProductMediaAction, publishProductInventoryAction, updateProduct, updateProductStock } from '../../../store/features/slices/product';
+import {
+  addProductDetailsAction,
+  addProductInventoryAction,
+  addProductMediaAction,
+  publishProductInventoryAction,
+  updateProduct,
+  updateProductStock,
+} from '../../../store/features/slices/product';
+import ProductSpecifications from '../../../components/product-specifications/ProductSpecifications.component';
 
 const EditProduct = () => {
   const { t } = useTranslation();
@@ -32,17 +41,20 @@ const EditProduct = () => {
   const [unitMeasure, setUnitMeasure] = useState<string>('kg');
   const [productState, setProductState] = useState<Partial<ProductResponse>>();
   const [productId, setProductId] = useState<string>('');
+  const [specsVisible, setSpecsVisible] = useState<boolean>(false);
 
-  const products = useSelector(state => state.products.payload);
+  const products = useSelector((state) => state.products.payload);
 
   const dispatch = useDispatch();
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { files } = e.target;
     if (files != null) {
-      dispatch(addProductMediaAction({ id: productId, media: files[0] })).unwrap().then(() => {
-        toast.success(t('media-add-success'));
-      });
+      dispatch(addProductMediaAction({ id: productId, media: files[0] }))
+        .unwrap()
+        .then(() => {
+          toast.success(t('media-add-success'));
+        });
     }
   };
 
@@ -64,7 +76,7 @@ const EditProduct = () => {
     setUnitMeasure('kg');
     setUnitPrice('');
     setQuantity('');
-  }
+  };
   useEffect(() => {
     if (!effectRef.current) {
       getById(String(id)).then((res) => {
@@ -76,7 +88,7 @@ const EditProduct = () => {
     }
   }, []);
   useEffect(() => {
-    const product = products?.products?.find(p => p.id === productId);
+    const product = products?.products?.find((p) => p.id === productId);
     const productDetails = products?.productDetails?.[productId];
     const productStocks = products?.productStocks?.[productId];
     const mediaSlots = products?.mediaSlots?.[productId];
@@ -85,7 +97,7 @@ const EditProduct = () => {
         product,
         productDetails,
         productStocks,
-        mediaSlots
+        mediaSlots,
       });
       if (productDetails) {
         setProductDetails(productDetails);
@@ -102,11 +114,13 @@ const EditProduct = () => {
       genetics,
       scientificName,
       moisture: Number(moisture),
-      cropYear: Number(cropYear)
+      cropYear: Number(cropYear),
     };
-    dispatch(addProductDetailsAction(productDetails)).unwrap().then(() => {
-      toast.success(t('product-details-saved'));
-    })
+    dispatch(addProductDetailsAction(productDetails))
+      .unwrap()
+      .then(() => {
+        toast.success(t('product-details-saved'));
+      });
   };
 
   const handleAdd = () => {
@@ -119,19 +133,23 @@ const EditProduct = () => {
       unitPrice: Number(unitPrice),
       currency,
       quantity: Number(quantity),
-      unitMeasure
+      unitMeasure,
     };
-    dispatch(addProductInventoryAction(productStock)).unwrap().then(() => {
-      toast.success(t('stock-added-successfully'));
-      resetStockValues();
-    });
+    dispatch(addProductInventoryAction(productStock))
+      .unwrap()
+      .then(() => {
+        toast.success(t('stock-added-successfully'));
+        resetStockValues();
+      });
   };
 
   const handlePublishStock = (stock: ProductStock) => {
-    dispatch(publishProductInventoryAction(stock.id)).unwrap().then(() => {
-      toast.success(t('stock-published-under-review'));
-    });
-  }
+    dispatch(publishProductInventoryAction(stock.id))
+      .unwrap()
+      .then(() => {
+        toast.success(t('stock-published-under-review'));
+      });
+  };
 
   const renderUploadSlots = (count: number) => {
     return Array(4 - count < 0 ? 1 : 4 - count)
@@ -145,22 +163,22 @@ const EditProduct = () => {
     <Wrapper
       heading={`${t('edit-product')} ${productState?.product?.name ?? ''}`}
       pathName={`${t('products')} / ${t('edit')} ${t('product')}`}
-      contentColor="transparent"
+      contentColor='transparent'
       renderButton={() => (
         <div className={classes.actionButtons}>
           <Button
-            bgColor="transparent"
+            bgColor='transparent'
             text={t('discard')}
-            padding="12px"
-            boxShadow="none"
-            color="#E63F07"
-            margin="0px 10px 0px 0px"
+            padding='12px'
+            boxShadow='none'
+            color='#E63F07'
+            margin='0px 10px 0px 0px'
           />
           <Button
-            bgColor="#E63F07"
+            bgColor='#E63F07'
             text={t('save')}
             iconAfter
-            padding="12px"
+            padding='12px'
             onClick={handleAdd}
           />
         </div>
@@ -170,15 +188,15 @@ const EditProduct = () => {
         <div className={classes.fileUpload}>
           {productState?.mediaSlots?.map((m) => (
             <label
-              htmlFor="upload"
+              htmlFor='upload'
               key={m.fileName}
               className={classes.preview}
             >
               <input
-                type="file"
-                id="upload"
+                type='file'
+                id='upload'
                 onChange={handleChange}
-                accept="/image*"
+                accept='/image*'
               />
               <img
                 src={m.src}
@@ -188,7 +206,7 @@ const EditProduct = () => {
                   objectPosition: 'center',
                   width: '100%',
                   height: '100%',
-                  borderRadius: '8px'
+                  borderRadius: '8px',
                 }}
               />
             </label>
@@ -197,7 +215,7 @@ const EditProduct = () => {
         </div>
       </InfoBlock>
       <div className={classes.splitInputs}>
-        <InfoBlock heading={t('product-information')} width="100%">
+        <InfoBlock heading={t('product-information')} width='100%'>
           <div className={classes.inputs}>
             <Input
               placeholder={t('scientific-name')}
@@ -215,8 +233,12 @@ const EditProduct = () => {
               placeholder={t('crop-year')}
               label={t('crop-year')}
               value={cropYear}
-              type="number"
-              onChange={(e) => setCropYear(String(e?.target?.value || new Date().getFullYear()))}
+              type='number'
+              onChange={(e) =>
+                setCropYear(
+                  String(e?.target?.value || new Date().getFullYear())
+                )
+              }
             />
             <Input
               placeholder={t('product-variety')}
@@ -235,7 +257,7 @@ const EditProduct = () => {
               label={t('moisture')}
               value={moisture}
               onChange={(e) => setMoisture(e?.target?.value)}
-              type="number"
+              type='number'
               step={0.1}
             />
             <TextArea
@@ -244,94 +266,110 @@ const EditProduct = () => {
               value={details}
               onChange={(e) => setDetails(e?.target?.value)}
             />
+            <Button
+              bgColor='#86b817'
+              text='Add Product Specifications'
+              iconAfter
+              padding='12px'
+              width='40%'
+              margin='16px 0 0'
+              style={{ justifySelf: 'flex-start' }}
+              onClick={() => setSpecsVisible(true)}
+            />
           </div>
         </InfoBlock>
         <div className={classes.rightBlock}>
-          {
-            productState?.productStocks?.map(stock => (
-              <InfoBlock
-                key={stock.id}
-                heading={`${t('stock')} ${stock.publishedAt != null && stock.verifiedAt == null
-                    ? `${t('published-at')}: ${new Date(stock.publishedAt).toLocaleDateString()} ${t('under-review')}`
-                    : ''} ${stock.verifiedAt != null ? t('verified') : ''}`}
-                >
-                <div className={classes.inputs}>
-                  <Input
-                    placeholder="00"
-                    label={t('quantity')}
-                    value={stock.quantity}
-                    type="number"
-                  />
-                  <Input
-                    placeholder="00"
-                    label={t('unit-measure')}
-                    value={stock.unitMeasure}
-                  />
-                  <Input
-                    placeholder="00"
-                    label={t('unit-price')}
-                    value={stock.unitPrice}
-                    type="number"
-                  />
-                  <Input
-                    placeholder="XAF"
-                    label={t('currency')}
-                    value={stock.currency}
-                  />
-                  <Button
-                    bgColor="#86b817"
-                    text={`${t('publish')} ${t('stock')}`}
-                    iconAfter
-                    padding="12px"
-                    onClick={() => handlePublishStock(stock)}
-                    width="100%"
-                    margin="16px 0 0"
-                  />
-                </div>
-              </InfoBlock>
-            ))
-          }
+          {productState?.productStocks?.map((stock) => (
+            <InfoBlock
+              key={stock.id}
+              heading={`${t('stock')} ${
+                stock.publishedAt != null && stock.verifiedAt == null
+                  ? `${t('published-at')}: ${new Date(
+                      stock.publishedAt
+                    ).toLocaleDateString()} ${t('under-review')}`
+                  : ''
+              } ${stock.verifiedAt != null ? t('verified') : ''}`}
+            >
+              <div className={classes.inputs}>
+                <Input
+                  placeholder='00'
+                  label={t('quantity')}
+                  value={stock.quantity}
+                  type='number'
+                />
+                <Input
+                  placeholder='00'
+                  label={t('unit-measure')}
+                  value={stock.unitMeasure}
+                />
+                <Input
+                  placeholder='00'
+                  label={t('unit-price')}
+                  value={stock.unitPrice}
+                  type='number'
+                />
+                <Input
+                  placeholder='XAF'
+                  label={t('currency')}
+                  value={stock.currency}
+                />
+                <Button
+                  bgColor='#86b817'
+                  text={`${t('publish')} ${t('stock')}`}
+                  iconAfter
+                  padding='12px'
+                  onClick={() => handlePublishStock(stock)}
+                  width='100%'
+                  margin='16px 0 0'
+                />
+              </div>
+            </InfoBlock>
+          ))}
           <InfoBlock heading={t('stock')}>
             <div className={classes.inputs}>
               <Input
-                placeholder="00"
+                placeholder='00'
                 label={t('quantity')}
                 value={quantity}
                 onChange={(e) => setQuantity(e?.target?.value)}
-                type="number"
+                type='number'
               />
               <Input
-                placeholder="00"
+                placeholder='00'
                 label={t('unit-measure')}
                 value={unitMeasure}
                 onChange={(e) => setUnitMeasure(e?.target?.value)}
               />
               <Input
-                placeholder="00"
+                placeholder='00'
                 label={t('unit-price')}
                 value={unitPrice}
                 onChange={(e) => setUnitPrice(e?.target?.value)}
-                type="number"
+                type='number'
               />
               <Input
-                placeholder="XAF"
+                placeholder='XAF'
                 label={t('currency')}
                 value={currency}
                 onChange={(e) => setCurrency(e?.target?.value)}
               />
               <Button
-                bgColor="#E63F07"
+                bgColor='#E63F07'
                 text={`${t('save')} stock`}
                 iconAfter
-                padding="12px"
+                padding='12px'
                 onClick={handleSaveStock}
-                width="100%"
-                margin="16px 0 0"
+                width='100%'
+                margin='16px 0 0'
               />
             </div>
           </InfoBlock>
         </div>
       </div>
+      <ProductSpecifications
+        showModal={specsVisible}
+        onClose={() => setSpecsVisible(false)}
+      />
     </Wrapper>
   );
 };

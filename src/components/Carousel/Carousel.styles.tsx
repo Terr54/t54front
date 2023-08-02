@@ -45,11 +45,12 @@ export const NavDots = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 10px;
 `;
 export const Dot = styled.div<carouselProps>`
   background-color: ${({ active }) => (active ? '#E63F07' : '#E5E5E5')};
-  width: ${({ active }) => (active ? '10px' : '5px')};
+  width: ${({ active }) => (active ? '14px' : '5px')};
   height: 5px;
-  border-radius: 40%;
+  border-radius: 35%;
   margin: 0px 1px;
 `;

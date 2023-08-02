@@ -1,13 +1,17 @@
 .container {
   padding: 18px;
   border-radius: 8px;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
 }
 .children {
-  margin-top: 10px;
+  width: auto;
+  box-sizing: border-box;
 }
 .heading {
-  font-size: 13px;
+  font-size: 14px;
   color: #666666;
 }
 .header {

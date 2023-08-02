@@ -1,0 +1,20 @@
+.planeGreen {
+  width: 12vw;
+  height: 18vh;
+}
+.planeOrange {
+  width: 16vw;
+  height: 18vh;
+  margin-top: 40px;
+}
+@media (max-width: 768px) {
+  .planeGreen {
+    width: 14vw;
+    height: 18vh;
+  }
+  .planeOrange {
+    width: 18vw;
+    height: 22vh;
+    margin-top: 40px;
+  }
+}

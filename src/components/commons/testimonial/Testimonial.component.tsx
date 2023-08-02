@@ -10,7 +10,7 @@ const Testimonial = ({ text, children }: testimonialProps) => {
         <QuoteUp />
       </Image>
       <Text>{text}</Text>
-      <Image>
+      <Image style={{ marginBottom: '10px' }}>
         <QuoteDown />
       </Image>
       {children}

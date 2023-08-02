@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+import pic from '../../../assets/pictures/banner.png';
 import {
   Container,
   DropDownHeader,
@@ -7,7 +8,8 @@ import {
   ListItem,
   Heading,
   SelectProps,
-  OptionSelect
+  OptionSelect,
+  ListItemImage,
 } from './Select.styles';
 
 const DropdownSelect = ({
@@ -32,19 +34,27 @@ const DropdownSelect = ({
   return (
     <Container style={{ ...(style ?? {}), width: '100%' }} {...props}>
       <DropDownHeader bgColor={bgColor} width={width} onClick={toggleDropdown}>
-        <Heading style={{ textTransform: 'uppercase' }}>{value ?? placeholder}</Heading>
+        <Heading style={{ textTransform: 'uppercase' }}>
+          {value ?? placeholder}
+        </Heading>
         <KeyboardArrowDownIcon style={{ fontSize: '15px' }} />
       </DropDownHeader>
       {isOpen && (
         <DropDownList style={dropdownListStyle}>
           {values?.map((option) => (
             <ListItem
-              active={value === (option.value ?? option.option) }
+              active={value === (option.value ?? option.option)}
               onClick={() => onOptionClicked(option)}
               key={option.value ?? option.option}
               style={{ textTransform: 'uppercase' }}
             >
               {option.option}
+              {
+                option?.image && <ListItemImage
+                src={option?.image}
+                alt='pic'
+              />
+              }
             </ListItem>
           ))}
         </DropDownList>
